@@ -17,10 +17,22 @@
   },
   "homepage": "https://github.com/MartinaShebova/NatureActivityInfo#readme",
   "dependencies": {
+    "@types/handlebars": "^4.0.36",
+    "@types/jquery": "^3.2.12",
+    "@types/navigo": "^4.0.1",
+    "@types/systemjs": "^0.20.5",
+    "@types/toastr": "^2.1.35",
     "body-parser": "^1.18.1",
     "express": "^4.15.4",
+    "handlebars": "^4.0.10",
+    "handlebars-intl": "^1.1.2",
+    "jquery": "^3.2.1",
     "mongodb": "^2.2.31",
+    "navigo": "^5.3.1",
     "nodemon": "^1.12.1",
-    "path": "^0.12.7"
+    "path": "^0.12.7",
+    "systemjs": "^0.20.19",
+    "systemjs-plugin-babel": "0.0.25",
+    "toastr": "^2.1.2"
   }
 }

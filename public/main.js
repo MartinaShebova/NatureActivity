@@ -1,10 +1,11 @@
 /* globals Navigo */
 
-import { home } from 'homeController';
 
 (function routing() {
 
     let router = new Navigo(null, true);
-        router.on('/', home)
-              .resolve();
+        router.on('/', () => {
+            console.log(4);
+        })
+        .resolve();
 }());
