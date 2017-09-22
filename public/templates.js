@@ -1,21 +1,20 @@
 /* globals Handlebars, HandlebarsIntl */
 import { requester } from 'requester';
 
-
 export function getTemplate(templateName) {
-    
+
     HandlebarsIntl.registerWith(Handlebars);
 
-    return requester.get(`/public/templates/${templateName}.hbs`)
+    return requester.get(`/public/views/${templateName}.hbs`)
 
-            .then((template) => {
-                
-                let compileToHandlebars = Handlebars.compile(template);
+        .then((template) => {
 
-                return Promise.resolve(compileToHandlebars);
+            let compileToHandlebars = Handlebars.compile(template);
 
-            }, (reject) => {
-                console.log(reject);
-            })
+            return Promise.resolve(compileToHandlebars);
+
+        }, (reject) => {
+            console.log(reject);
+        })
 
 }
