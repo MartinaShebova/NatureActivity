@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>NatureActivity</title>
+    <link href="/static/images/favicon.ico" rel="icon" type="image/x-icon" />
+
+    <link rel="stylesheet" href="/libs/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/libs/toastr/build/toastr.min.css">
+    <link rel="stylesheet" href="./css/styles.css">
+
+    <!-- External libs -->
+    <script src="/libs/jquery/dist/jquery.min.js"></script>
+    <script src="/libs/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="/libs/toastr/build/toastr.min.js"></script>
+</head>
+
+<body>
+    <div id="dynamic-container">
+
+    </div>
+
+    <!-- SystemJs -->
+    <script src="/libs/systemjs/dist/system.js"></script>
+    <script src="./js/system-config.js"></script>
+    <script>
+        System.import('main');
+    </script>
+
+    <!-- Navigo -->
+    <script src="/libs/navigo/lib/navigo.min.js"></script>
+
+    <!--Handlebars-->
+    <script src="/libs/handlebars/dist/handlebars.min.js"></script>
+    <script src="/libs/handlebars-intl/dist/handlebars-intl.min.js"></script>
+</body>
+
+</html>
