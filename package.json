@@ -4,7 +4,7 @@
   "description": "The final project for Telerik Academy Front End Track",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "node server.js"
   },
   "repository": {
     "type": "git",
@@ -17,12 +17,14 @@
   },
   "homepage": "https://github.com/MartinaShebova/NatureActivityInfo#readme",
   "dependencies": {
+    "@types/browser-sync": "0.0.36",
     "@types/handlebars": "^4.0.36",
     "@types/jquery": "^3.2.12",
     "@types/navigo": "^4.0.1",
     "@types/systemjs": "^0.20.5",
     "@types/toastr": "^2.1.35",
     "body-parser": "^1.18.1",
+    "browser-sync": "^2.18.13",
     "express": "^4.15.4",
     "handlebars": "^4.0.10",
     "handlebars-intl": "^1.1.2",
@@ -34,5 +36,20 @@
     "systemjs": "^0.20.19",
     "systemjs-plugin-babel": "0.0.25",
     "toastr": "^2.1.2"
+  },
+  "devDependencies": {
+    "@types/del": "^3.0.0",
+    "@types/gulp": "^4.0.4",
+    "@types/gulp-sass": "0.0.30",
+    "@types/gulp-uglify": "^3.0.1",
+    "@types/gulp-useref": "^3.0.30",
+    "@types/run-sequence": "0.0.29",
+    "del": "^3.0.0",
+    "gulp": "^3.9.1",
+    "gulp-cssnano": "^2.1.2",
+    "gulp-sass": "^3.1.0",
+    "gulp-uglify": "^3.0.0",
+    "gulp-useref": "^3.1.2",
+    "run-sequence": "^2.2.0"
   }
 }

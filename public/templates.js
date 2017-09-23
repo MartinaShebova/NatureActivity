@@ -1,4 +1,3 @@
-/* globals Handlebars, HandlebarsIntl */
 import { requester } from 'requester';
 
 export function getTemplate(templateName) {
@@ -15,6 +14,6 @@ export function getTemplate(templateName) {
 
         }, (reject) => {
             console.log(reject);
-        })
+        });
 
 }

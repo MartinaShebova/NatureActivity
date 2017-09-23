@@ -19,24 +19,25 @@
         
     </div>
 
-    <!-- SystemJs -->
+    <!--build:js js/main.min.js -->
     <script src="/libs/systemjs/dist/system.js"></script>
     <script src="/static/system-config.js"></script>
+
+
+    <!--build:remove js/main.min.js -->
     <script>
         System.import('main');
     </script>
+    <!-- endbuild -->
 
-    <!-- Navigo -->
     <script src="/libs/navigo/lib/navigo.min.js"></script>
-
-    <!--Handlebars-->
     <script src="/libs/handlebars/dist/handlebars.min.js"></script>
     <script src="/libs/handlebars-intl/dist/handlebars-intl.min.js"></script>
-
-    <!-- External libs -->
+    
     <script src="/libs/jquery/dist/jquery.min.js"></script>
     <!-- <script src="/libs/bootstrap/dist/js/bootstrap.min.js"></script> -->
     <script src="/libs/toastr/build/toastr.min.js"></script>
+    <!-- endbuild -->
 </body>
 
 </html>
