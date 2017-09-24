@@ -5,7 +5,8 @@
         "Handlebars": true,
         "HandlebarsIntl": true,
         "console": true,
-        "alert": true
+        "alert": true,
+        "System": true
     },
     "strict": "implied",
     "undef": true,

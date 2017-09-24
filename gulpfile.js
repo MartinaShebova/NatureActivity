@@ -6,7 +6,8 @@ const gulp = require('gulp'),
     gulpIf = require('gulp-if'),
     cssnano = require('gulp-cssnano'),
     del = require('del'),
-    runSequence = require('run-sequence');
+    runSequence = require('run-sequence'),
+    babel = require('gulp-babel');
 
 gulp.task('sass', function () {
     return gulp.src('./public/scss/**/*.scss')
@@ -18,51 +19,44 @@ gulp.task('sass', function () {
         );
 });
 
-gulp.task('watch', ['browserSync', 'sass'], function () {
-    gulp.watch('./public/scss/**/*.scss', ['sass']);
-    // gulp.watch('public/*.html', browserSync.reload); 
-    // gulp.watch('public/js/**/*.js', browserSync.reload); 
+gulp.task('minifycss', function () {
+    return gulp.src('./public/css/**/*.css')
+        .pipe(useref())
+        .pipe(gulpIf('*.css', uglify()))
+        // Minifies only if it's a CSS file
+        .pipe(gulpIf('*.css', cssnano()))
+        .pipe(gulp.dest('build/css/minified'));
 });
 
-// gulp.task('browserSync', function () {
-//     browserSync.init({
-//         server: {
-//             baseDir: 'public'
-//         },
-//     });
-// });
+gulp.task('watch', ['browserSync', 'sass'], function () {
+    gulp.watch('./public/scss/**/*.scss', ['sass']);
+});
 
-// gulp.task('minifyjs', function () {
-//     return gulp.src('public/*.html')
-//         // Minifies only if it's a JavaScript file
-//         .pipe(gulpIf('*.js', uglify()))
-//         .pipe(useref({
+gulp.task('transpilejs', function () {
+    return gulp.src('./public/js/**/*.js')
+        .pipe(babel({
+            presets: ['es2015']
+        }))
+        .pipe(gulp.dest('./build/js/transpiled'));
+});
 
-//             searchPath: './node_modules',
-//             transformPath: function (filePath) {
-//                 return filePath.replace('/libs', '') || filePath.replace('/static', '');
-//             },
+gulp.task('minifyjs', function () {
+    return gulp.src('./build/js/transpiled/**/*.js')
+        // Minifies only if it's a JavaScript file
+        .pipe(useref())
+        .pipe(gulpIf('*.js', uglify()))
+        .pipe(gulp.dest('build/js/minified')
+    );
+});
 
-//         }))
-//         .pipe(gulp.dest('dist'));
-// });
-
-// gulp.task('useref', function(){
-//     return gulp.src('app/*.html')
-//       .pipe(useref())
-//       .pipe(gulpIf('*.js', uglify()))
-//       // Minifies only if it's a CSS file
-//       .pipe(gulpIf('*.css', cssnano()))
-//       .pipe(gulp.dest('dist'))
-//   });
-
-gulp.task('clean:dist', function () {
-    return del.sync('dist');
+gulp.task('clean:build', function () {
+    return del.sync('build');
 });
 
 gulp.task('build', function (callback) {
-    runSequence('clean:dist',
-        ['sass', 'browserSync'],
+    runSequence('clean:build',
+        ['sass', 'minifycss', 'transpilejs'],
+        'minifyjs',
         callback
     );
 });
