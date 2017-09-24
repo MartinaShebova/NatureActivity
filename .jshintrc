@@ -1,0 +1,17 @@
+{
+    "esversion": 6,
+    "globals": {
+        "Navigo": true,
+        "Handlebars": true,
+        "HandlebarsIntl": true,
+        "console": true,
+        "alert": true,
+        "System": true
+    },
+    "strict": "implied",
+    "undef": true,
+    "unused": true,
+    "varstmt": true,
+    "freeze": true,
+    "node": true
+}

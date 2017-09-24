@@ -1,2 +1,2 @@
-# NatureActivity
-The final Telerik Academy course project
+# NatureActivityInfo
+Final project for Telerik Academy Front End Track
