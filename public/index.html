@@ -5,37 +5,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
     <title>NatureActivity</title>
+
+    <!-- Favicon -->
     <link href="/static/images/favicon.ico" rel="icon" type="image/x-icon" />
 
-    <!-- <link rel="stylesheet" href="/libs/bootstrap/dist/css/bootstrap.min.css"> -->
+    <!-- External libraries -->
+    <link rel="stylesheet" href="/libs/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="/libs/toastr/build/toastr.min.css">
+
+    <!--build:css css/minifiedCustomStyles.min.js -->
+    <!-- Custom css -->
     <link rel="stylesheet" href="/static/css/styles.css">
+    <!-- endbuild -->
 
 </head>
 
 <body>
-    <div id="dynamic-container">
-        
-    </div>
 
-    <!-- SystemJs -->
+    <!-- Dynamic content stays here -->
+    <div id="dynamic-container"></div>
+
+    <!-- System js files -->
     <script src="/libs/systemjs/dist/system.js"></script>
     <script src="/static/system-config.js"></script>
+    
     <script>
         System.import('main');
     </script>
 
-    <!-- Navigo -->
+    <!-- External Libraries -->
     <script src="/libs/navigo/lib/navigo.min.js"></script>
-
-    <!--Handlebars-->
     <script src="/libs/handlebars/dist/handlebars.min.js"></script>
     <script src="/libs/handlebars-intl/dist/handlebars-intl.min.js"></script>
-
-    <!-- External libs -->
     <script src="/libs/jquery/dist/jquery.min.js"></script>
-    <!-- <script src="/libs/bootstrap/dist/js/bootstrap.min.js"></script> -->
+    <script src="/libs/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="/libs/toastr/build/toastr.min.js"></script>
 </body>
 
