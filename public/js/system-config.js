@@ -10,9 +10,9 @@ System.config({
         'bootstrap-js': '/libs/bootstrap/dist/js/bootstrap.min.js',
 
         // App files
-        'main': '/static/main.js',
-        'requester': '/static/requester.js',
-        'templates': '/static/templates.js',
-        'test': '/static/js/test.js'
+        'main': '/static/js/main.js',
+        'requester': '/static/js/requester.js',
+        'templates': '/static/js/templates.js',
+
     }
 });
