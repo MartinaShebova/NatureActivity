@@ -40,10 +40,6 @@
     "toastr": "^2.1.2"
   },
   "devDependencies": {
-    "@types/del": "^3.0.0",
-    "@types/gulp": "^4.0.4",
-    "@types/gulp-babel": "^6.1.29",
-    "@types/gulp-concat": "0.0.31",
     "@types/gulp-sass": "0.0.30",
     "@types/gulp-uglify": "^3.0.1",
     "@types/gulp-useref": "^3.0.30",

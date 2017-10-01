@@ -4,7 +4,7 @@ export function getTemplate(templateName) {
 
     HandlebarsIntl.registerWith(Handlebars);
 
-    return requester.get(`/public/views/${templateName}.hbs`)
+    return requester.get(`/static/views/${templateName}.hbs`)
 
         .then((template) => {
 

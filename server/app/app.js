@@ -13,6 +13,8 @@ const init = (data) => {
         });
     };
     
+    require('./api-routes')(app, data);
+    
     app.get('/', getIndexHtml);
 
     app.use(bodyParser.json());
