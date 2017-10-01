@@ -17,20 +17,73 @@
 
     <!--build:css css/minifiedCustomStyles.min.js -->
     <!-- Custom css -->
-    <link rel="stylesheet" href="/static/css/styles.css">
+    <link rel="stylesheet" href="/static/css/main.css">
     <!-- endbuild -->
 
 </head>
 
 <body>
-
+    <div id="wrapper">
+        <header>
+            <h1>
+                <a href="#" title="nature activity">
+                    <img src="/static/images/logo.png" id="logo" alt="nature activity logo" width="147px" height="39px"/>
+                </a>
+            </h1>
+        </header>
+        <section>
+            <nav>
+                <ul>
+                    <li><a class="active" href="#" title="Home">Home</a></li>
+                    <li><a href="#" title="Earthquakes Information">Earthquakes Information</a></li>
+                    <li><a href="#" title="Weather">Weather</a></li>
+                    <li><a href="#" title="Upload">Upload</a></li>
+                </ul>
+            </nav>
+        </section>
+    </div>
     <!-- Dynamic content stays here -->
     <div id="dynamic-container"></div>
+
+    <footer>
+        <div class="footer-top">
+            <div class="footer-top-content left">
+                <h4 class="footer-top-title">Who am I</h3>
+                    <div class="footer-top-text">
+                        My name is Martina Shebova. I am 26 years old. I have made this website for the Telerik Academy's final Front End Track course.
+                        I hope you would like it. You can contact with me by Facebook, GitHub and Linkedin. Enjoy!
+                    </div>
+            </div>
+            <div class="footer-top-content left">
+                <h4 class="footer-top-title">Upload</h3>
+                    <div class="footer-top-text">
+                        Upload as many pictures as you want. Share your pictures from the epicenter of the events. Take a picture from a storm, moment of an earthquake, or just a nice flower. Share your point of view for different nature events. It is easy just visit my upload section. 
+                    </div>
+            </div>
+            <div class="footer-top-content right">
+                <h4 class="footer-top-title">Project purpose</h3>
+                    <div class="footer-top-text">
+                        Not only, this project is made for the Telerik Academy's final Front End Track course, but also for thousands of people around the world sharing their experience with the Mother Nature. In this website you can get an easy access to the latest earthquake information or weather activity.
+                    </div>
+            </div>
+        </div>
+        <div class="footer-bottom-wrapper">
+            <div class="footer-bottom">
+                <ul>
+                    <li><a class="active" href="#" title="Home">Home</a></li>
+                    <li><a href="#" title="Earthquakes Information">Earthquakes Information</a></li>
+                    <li><a href="#" title="Weather">Weather</a></li>
+                    <li><a href="#" title="Upload">Upload</a></li>
+                    <li id="createdBy">Created by <span><a href="https://github.com/MartinaShebova" target="_blank" class="createdByTitle" title="Created by Martina Shebova">Martina Shebova</a></span></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
 
     <!-- System js files -->
     <script src="/libs/systemjs/dist/system.js"></script>
     <script src="/static/js/system-config.js"></script>
-    
+
     <script>
         System.import('main');
     </script>
