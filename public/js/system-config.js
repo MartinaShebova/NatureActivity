@@ -11,7 +11,8 @@ System.config({
         'templates': '/static/js/templates.js',
 
         //Controllers
-        'homeController': '/static/js/controllers/homeController.js'
+        'homeController': '/static/js/controllers/homeController.js',
+        'galleryController': '/static/js/controllers/galleryController.js'
 
     }
 });

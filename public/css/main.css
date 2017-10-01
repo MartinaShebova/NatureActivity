@@ -77,10 +77,69 @@ body {
   font-style: italic;
 }
 
+#title-wrapper {
+  margin: 0 auto;
+  width: 960px;
+}
+
+#title-wrapper .dynamic-info-title {
+  font-family: 'Open Sans Condensed', Helvetica, Arial, Lucida, sans-serif;
+  padding-top: 63px;
+  padding-bottom: 0;
+  color: #ffffff;
+  font-size: 30px;
+}
+
+#gallery-wrapper {
+  background-image: url("../images/main-background.png");
+  margin-top: 22px;
+}
+
+#gallery-wrapper #main-gallery-container {
+  margin: 0 auto;
+  width: 960px;
+}
+
+#gallery-wrapper #main-gallery-container #breadcrumbs {
+  font-size: 12px;
+  color: #7e7d7d;
+  padding: 4px;
+}
+
+#gallery-wrapper #main-gallery-container #breadcrumbs a {
+  color: #a3a3a3;
+  text-decoration: none;
+}
+
+#gallery-wrapper #main-gallery-container #breadcrumbs .raquo {
+  color: #7e7d7d;
+  padding: 4px;
+}
+
+#gallery-wrapper #main-gallery-container .media-box {
+  width: 140px;
+  border: 1px solid #dadada;
+  border-bottom: 1px solid #b7b7b7;
+  background: #ffffff;
+  padding: 5px;
+  margin-bottom: 7px;
+  margin-right: 45px;
+  display: inline-block;
+}
+
+#gallery-wrapper #main-gallery-container .media-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+#gallery-wrapper #main-gallery-container .clearfix {
+  clear: both;
+}
+
 footer {
   bottom: 0;
   width: 100%;
-  position: fixed;
   height: 366px;
 }
 
