@@ -3,6 +3,7 @@ import { gallery } from 'galleryController';
 import { earthquakes } from 'earthquakesController';
 import { weather } from 'weatherController';
 import { initial } from 'initialController';
+import { upload } from 'uploadController';
 
 (function routing() {
 
@@ -12,6 +13,6 @@ import { initial } from 'initialController';
         .on('/gallery', gallery)
         .on('/earthquakes', earthquakes)
         .on('/weather', weather)
-        
+        .on('/upload', upload)        
         .resolve();
 }()); 

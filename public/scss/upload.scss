@@ -1,0 +1,57 @@
+#upload-wrapper{
+    background-image: url("../images/main-background.png");
+    margin-top: 22px;
+    
+    #main-upload-container{
+      margin: 0 auto;
+      width: 960px;
+      padding-bottom: 37px;
+  
+        .breadcrumbs {
+          font-size: 12px;
+          color: #7e7d7d;
+          padding-top: 29px;
+          padding-bottom: 50px;
+  
+          a{
+            color: #a3a3a3;
+            text-decoration: none;
+          }
+  
+          .raquo{
+            color: #7e7d7d;
+            padding: 4px;
+          }
+        }
+        .img-url{
+            -webkit-border-radius: 28;
+            -moz-border-radius: 28;
+            border-radius: 28px;
+            font-family: Arial;
+            color: #262d35;
+            font-size: 14px;
+            outline: 0;
+            text-align: center;
+        }
+        .upload-btn{
+            -webkit-border-radius: 28;
+            -moz-border-radius: 28;
+            border-radius: 28px;
+            font-family: Arial;
+            color: #ffffff;
+            font-size: 11px;
+            background: #262d35;
+            padding: 5px 8px 5px 8px;
+            border: solid #050505 1px;
+
+            &:hover{
+              cursor: pointer;
+              background: #505963;
+              box-shadow: #B3B3B3 2px 2px 2px;
+              -webkit-box-shadow: #B3B3B3 2px 2px 2px;
+              -moz-box-shadow: #B3B3B3 2px 2px 2px;
+              text-decoration: none;
+            }
+          }
+    }
+}

@@ -16,7 +16,6 @@ System.config({
         'earthquakesController': '/static/js/controllers/earthquakesController.js',
         'weatherController': '/static/js/controllers/weatherController.js',
         'initialController': '/static/js/controllers/initialController.js',
-        
-        
+        'uploadController': '/static/js/controllers/uploadController.js',
     }
 });

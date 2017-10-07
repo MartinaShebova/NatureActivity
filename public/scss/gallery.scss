@@ -48,38 +48,30 @@
                           img {
                             height: 100%;
                             width: 100%;
+
+                            &:hover{
+                                opacity: 0.8;
+                            }
                           }
                           
-                          .btn-wrapper{
-                            position: absolute;
-                            z-index: 100;
-
-                            .redirect{
-                                background-image: url("./../images/featured-more.png");
-                                display: inline-block;
-                              }
-      
-                              .enlarge{
-                                background-image: url("./../images/zoom-icon.png");
-                                display: inline-block;
-                              }
+                          .redirect{
+                              width: 28%;
+                              height: 35%;
+                              position: absolute;
+                              left: 25%;
+                              top: 35%;
                           }
-
+    
+                          .enlarge{
+                            width: 28%;
+                            height: 35%;
+                            position: absolute;
+                            right: 23%;
+                            bottom: 30%;
+                          }
                       }
-  
-  
                   }
               }
         }
     }
   }
-
-  .et_pt_portfolio_image { position: relative; }
-  .et_pt_portfolio_image img { display: block; }
-  .et_portfolio_more_icon, .et_portfolio_zoom_icon { display: block; height: 37px; position: absolute; top: 68px; width: 37px; text-indent: -9999px; display: none; }
-  .et_portrait_layout .et_portfolio_more_icon, .et_portrait_layout .et_portfolio_zoom_icon { top: 142px; }
-  .et_portfolio_more_icon { background: url('./../images/featured-more.png') no-repeat; left: 94px; }
-  .et_portfolio_zoom_icon { background: url('./../images/zoom-icon.png') no-repeat; left: 134px; }
-  .et_video .et_portfolio_zoom_icon { background: url('./../images/featured-more.png') no-repeat; }
-  .et_pt_portfolio_overlay { width: 100%; height: 100%; background: url('./../images/featured-more.png') no-repeat; display: block; position: absolute; top: 0px; left: 0px; }
-  
