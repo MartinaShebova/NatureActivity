@@ -22,6 +22,7 @@
     "@types/handlebars": "^4.0.36",
     "@types/jquery": "^3.2.12",
     "@types/navigo": "^4.0.1",
+    "@types/slick-carousel": "^1.6.32",
     "@types/systemjs": "^0.20.5",
     "@types/toastr": "^2.1.35",
     "body-parser": "^1.18.1",
@@ -35,6 +36,7 @@
     "navigo": "^5.3.1",
     "nodemon": "^1.12.1",
     "path": "^0.12.7",
+    "slick-carousel": "^1.8.1",
     "systemjs": "^0.20.19",
     "systemjs-plugin-babel": "0.0.25",
     "toastr": "^2.1.2"

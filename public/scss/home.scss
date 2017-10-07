@@ -1,0 +1,185 @@
+/* Services */
+
+#features{
+    background: url("../images/main-background.png");
+    height: 925px;
+    width: 100%;
+
+    .wrapper-center{
+        margin: 0 auto;
+        padding: 0;
+        max-width: 960px;
+        width: 100%;
+
+        #features-list{
+            list-style: none;
+
+            .feature-one-two{
+                float: left;
+                margin-right: 46px;
+                width: 288px;
+                margin-top: 66px;
+                text-align: left;
+
+                img{
+                    display: block;
+                    float: left;
+                    margin-right: 10px;
+                    width: 38px;
+                    height: 38px;
+                    margin-bottom: 20px;
+                }
+                .f-1{
+                    float: right;
+    
+                    h2{
+                        margin: 0;
+                        padding: 0;
+                        margin-bottom: 13px;
+                    }
+                    p{
+                        text-align: left;
+                        width: 239px;
+                        height: 149px;
+                        overflow: hidden;
+                        font-family: DroidSans;
+                    }
+                    form{
+                        display: block;
+
+                        .read-more{
+
+                        }
+                    }
+                }
+            }
+            .last{
+                margin-right: 0 !important;
+                float: left;
+                width: 288px;
+                margin-top: 66px;
+                text-align: left;
+
+                img{
+                    display: block;
+                    float: left;
+                    margin-right: 10px;
+                    width: 38px;
+                    height: 38px;
+                    margin-bottom: 20px;
+                }
+                .f-1{
+                    h2{
+                        margin: 0;
+                        padding: 0;
+                        margin-bottom: 13px;
+                    }
+                    p{
+                        text-align: left;
+                        width: 239px;
+                        height: 149px;
+                        overflow: hidden;
+                        font-family: DroidSans;
+                    }
+                    form{
+                        .read-more{
+                            float: right;
+                            border-radius: 15px;
+                            margin-top: 12px;
+
+                            &:hover{
+                                box-shadow: #B3B3B3 2px 2px 2px;
+                                -webkit-box-shadow: #B3B3B3 2px 2px 2px;
+                                -moz-box-shadow: #B3B3B3 2px 2px 2px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* End Services */
+
+/* Quote */
+
+#info {
+    background: url('./../images/quote-box.png');
+    height: 158px;
+    width: 100%;
+    margin-top: 40px;
+    display: inline-block;
+
+    .wrapper-center{
+        margin: 0 auto;
+        padding: 0;
+        max-width: 960px;
+        width: 100%;
+        
+        img{
+            position: relative;
+            left: 465px;
+            top: -10px;
+        }
+
+        p{
+            text-align: center;
+            font-size: 30px;
+            font-family: ColaborateThin;
+            margin-top: 10px;
+        }
+    }
+}
+.wrapper-center{
+    margin: 0 auto;
+    padding: 0;
+    max-width: 960px;
+    width: 100%;
+
+    #additional-info {
+        position: relative;
+        left: 395px;
+        top: -25px;
+    }
+}
+
+/* End Quote */
+
+/* Media */
+
+#recent-work{
+    .wrapper-center{
+        margin: 0 auto;
+        padding: 0;
+        max-width: 960px;
+        width: 100%;
+
+        .work{
+            list-style-type: none;
+
+            li{
+                float: left;
+                margin-right: 46px;
+                margin-bottom: 50px;
+
+                .work-box{
+                    width: 145px;
+                    height: 94px;
+                    background-color: #25575E;
+                    border: 5px solid white;
+                    -webkit-box-shadow: #4E4C4C 5px 5px 5px inset;
+                    -moz-box-shadow: #4E4C4C 5px 5px 5px inset;
+                    box-shadow: #4E4C4C 5px 5px 5px inset;
+
+                    &:hover{
+                        background-color: #6D8E93;                        
+                    }
+                }
+            }
+        }
+    } 
+}
+
+/* Media End */
+

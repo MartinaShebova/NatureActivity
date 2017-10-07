@@ -12,7 +12,11 @@ System.config({
 
         //Controllers
         'homeController': '/static/js/controllers/homeController.js',
-        'galleryController': '/static/js/controllers/galleryController.js'
-
+        'galleryController': '/static/js/controllers/galleryController.js',
+        'earthquakesController': '/static/js/controllers/earthquakesController.js',
+        'weatherController': '/static/js/controllers/weatherController.js',
+        'initialController': '/static/js/controllers/initialController.js',
+        
+        
     }
 });
