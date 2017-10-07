@@ -17,5 +17,7 @@ System.config({
         'weatherController': '/static/js/controllers/weatherController.js',
         'initialController': '/static/js/controllers/initialController.js',
         'uploadController': '/static/js/controllers/uploadController.js',
+        'singleController': '/static/js/controllers/singleController.js',
+        
     }
 });

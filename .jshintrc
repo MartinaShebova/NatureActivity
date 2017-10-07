@@ -7,7 +7,9 @@
         "console": true,
         "alert": true,
         "System": true,
-        "$": true
+        "$": true,
+        "document": true,
+        "window": true
     },
     "strict": "implied",
     "undef": true,

@@ -19,6 +19,7 @@
   "dependencies": {
     "@types/bootstrap": "^3.3.36",
     "@types/browser-sync": "0.0.36",
+    "@types/fancybox": "^2.1.32",
     "@types/handlebars": "^4.0.36",
     "@types/jquery": "^3.2.12",
     "@types/navigo": "^4.0.1",
@@ -29,6 +30,8 @@
     "bootstrap": "^3.3.7",
     "browser-sync": "^2.18.13",
     "express": "^4.15.4",
+    "fancybox": "^3.0.0",
+    "font-awesome": "^4.7.0",
     "handlebars": "^4.0.10",
     "handlebars-intl": "^1.1.2",
     "jquery": "^3.2.1",

@@ -45,7 +45,7 @@
                           -moz-box-shadow: #4E4C4C 5px 5px 5px inset;
                           box-shadow: #4E4C4C 5px 5px 5px inset;
   
-                          img {
+                          .media {
                             height: 100%;
                             width: 100%;
 
@@ -68,6 +68,7 @@
                             position: absolute;
                             right: 23%;
                             bottom: 30%;
+                            cursor: pointer;
                           }
                       }
                   }

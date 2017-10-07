@@ -182,4 +182,101 @@
 }
 
 /* Media End */
+.carousel {
+    top: 0;
+  }
+  .carousel-inner {
+    top: 0;
+  }
+  .carousel-inner .item {
+    height: 335px;
+    width: 100%;
+    top: 0;
+  }
+  .carousel-inner .item.active {
+    top: 0;
+    position: relative;
+    height: auto;
+    width: 100%;
+    text-align: center;
+    display: inline-block;
+  }
+  .carousel-inner .carousel-cell {
+    margin: 1em 0 1em 0;
+    display: inline-block;
+    height: 335px;
+    width: 500px;
+    background: #25575e;
+    -webkit-box-shadow: 0px 4px 19px 5px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 4px 19px 5px rgba(0,0,0,0.75);
+    box-shadow: 0px 4px 19px 5px rgba(0,0,0,0.75);
+  }
+  .carousel-inner .carousel-cell .p-icon-container {
+    background: none;
+    opacity: 1;
+    top: -55px;
+    line-height: 130px;
+    position: relative;
+  }
+  .carousel-inner .carousel-cell .p-icon-container .p-icon {
+    height: 4.5em;
+    width: 4.5em;
+    background: none;
+    border: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+  }
+  .carousel-inner .carousel-cell .p-icon-container .p-icon i {
+    color: #fff !important;
+    font-size: 2.5em;
+  }
+  .carousel-inner .carousel-cell .p-icon-container .icon-right {
+    position: absolute;
+    right: 0;
+    top: 80%;
+  }
+  .carousel-inner .carousel-cell .p-icon-container .icon-left {
+    position: absolute;
+    left: 0;
+    top: 80%;
+  }
+  .carousel-inner .carousel-caption-mine {
+    width: 500px;
+    height: 55px;
+    position: relative;
+    top: 280px;
+    color: #fff;
+    box-sizing: border-box;
+    line-height: 50px;
+    text-align: left;
+    padding-left: 1em;
+  }
+  .carousel-inner .carousel-caption-mine span {
+    color: #fff;
+    font-size: 1.3em;
+    z-index: 10000;
+  }
+  .carousel-inner .carousel-caption-mine:before {
+    content: "";
+    width: 500px;
+    height: 55px;
+    background-color: rgba(0,0,0,0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #fff;
+    border: 1px solid #537b80;
+    box-sizing: border-box;
+    -webkit-mask-image: linear-gradient(to right, #000, transparent);
+    mask-image: linear-gradient(to right, #000, transparent);
+  }
+  .carousel {
+    margin-top: 60px;
+    display: block;
+  }
+
+  .center{
+      margin-right: 10px;
+  }
 
