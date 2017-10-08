@@ -55,3 +55,38 @@
           }
     }
 }
+
+@media only screen and (max-width: 768px) {
+  
+  .small-devices{
+
+    .title-wrapper{
+      width: 100%;
+    }
+
+      #main-upload-container{
+        width: 100% !important;
+
+        .breadcrumbs{
+          font-size: 20px;
+        }
+      }
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 956px){
+  .medium-devices{
+
+    .title-wrapper{
+      width: 100%;
+    }
+
+    #main-upload-container{
+      width: 100% !important;
+
+      .breadcrumbs{
+        font-size: 20px;
+      }
+    }
+  }
+}

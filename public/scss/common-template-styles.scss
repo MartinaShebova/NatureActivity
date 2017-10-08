@@ -191,3 +191,125 @@
         }
       }
     }
+
+
+    @media only screen and (max-width: 768px) {
+      
+      .small-devices{
+        .title-wrapper{
+          width: 100%;
+        }
+
+        .common-template-wrapper{
+          
+          .common-template-sub-wrapper{
+            width: 100% !important;
+        
+              .breadcrumbs {
+                font-size: 20px;
+                padding-bottom: 40px;
+              }
+        
+              .container{
+                width: 100% !important;
+        
+                .left-side{
+                  width: auto;
+                  float: none;
+        
+                  .content-box{
+
+                    .border-pic{
+                      width: 100% !important;
+                    }
+                    .content-title{
+                      font-size: 25px;
+                    }
+                    .sub-text{
+                      font-size: 16px;
+                    }
+
+                    .text-wrapper{
+                      display: inline-block;
+                      padding-top: 10px;
+                    }
+        
+                    .readmore{
+
+                      font-size: 16px;
+                      margin-left: 80%;
+
+                      &:last-child{
+                        float: none;
+                      }
+                    }
+                  }
+                }
+                .sidebar{
+                  display: table;
+                  margin: 0 auto;
+                  width: auto;
+                  float: none;                
+                }
+              }
+            }
+          }
+      }
+    }
+    
+    @media only screen and (min-width: 769px) and (max-width: 958px){
+
+      .medium-devices{
+        .title-wrapper{
+          width: 100%;
+        }
+
+        .common-template-wrapper{
+          
+          .common-template-sub-wrapper{
+            width: 100% !important;
+        
+              .breadcrumbs {
+                font-size: 20px;
+                padding-bottom: 40px;
+              }
+        
+              .container{
+                width: 100% !important;
+        
+                .left-side{
+                  width: auto;
+                  float: none;
+        
+                  .content-box{
+
+                    .border-pic{
+                      width: 100% !important;
+                    }
+                    .content-title{
+                      font-size: 25px;
+                    }
+                    .sub-text{
+                      font-size: 16px;
+                    }
+        
+                    .readmore{
+                      font-size: 16px;
+
+                      &:last-child{
+                        float: none;
+                      }
+                    }
+                  }
+                }
+                .sidebar{
+                  display: table;
+                  margin: 0 auto;
+                  width: auto;
+                  float: none;                
+                }
+              }
+            }
+          }
+      }
+    }

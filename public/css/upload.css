@@ -57,3 +57,27 @@
   -moz-box-shadow: #B3B3B3 2px 2px 2px;
   text-decoration: none;
 }
+
+@media only screen and (max-width: 768px) {
+  .small-devices .title-wrapper {
+    width: 100%;
+  }
+  .small-devices #main-upload-container {
+    width: 100% !important;
+  }
+  .small-devices #main-upload-container .breadcrumbs {
+    font-size: 20px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 956px) {
+  .medium-devices .title-wrapper {
+    width: 100%;
+  }
+  .medium-devices #main-upload-container {
+    width: 100% !important;
+  }
+  .medium-devices #main-upload-container .breadcrumbs {
+    font-size: 20px;
+  }
+}

@@ -35,6 +35,10 @@ footer {
                 }
             }
 
+            .mobile-foo-2{
+                display: none;
+            }
+
             .foo-2 {
                 max-width: 249px;
                 margin-left: 130px !important;
@@ -102,6 +106,10 @@ footer {
             max-width: 960px;
             width: 100%;
 
+            .mobile-version{
+                display: none;
+            }
+
             ul{
                 float: left;
 
@@ -141,7 +149,7 @@ footer {
 
 @media only screen and (max-width: 768px) {
     
-    .extra-small-device{
+    .small-devices{
 
         footer{
             width: 100%;
@@ -149,13 +157,17 @@ footer {
             #footer-content{
                 display: inline-block;
                 text-align: center;
+                margin-top: -20px;
 
                 li{
                     display: block;
                     text-align: justify;
+                    margin: 50px 20px;
+                    max-width: 0;
 
                     h2{
                         font-size: 25px !important;
+                        text-align: center;
                     }
 
                     p{
@@ -163,11 +175,163 @@ footer {
                     }
                 }
 
+                .mobile-foo-2{
+                    max-width: 235px;
+                    list-style: none;
+                    margin-top: 50px;
+                    margin-bottom: 50px;
+                    height: 180px;
+                    overflow: visible;
+                    display: inline-block;              
+    
+                    h2{
+                        font-family: ColaborateThin;
+                        font-size: 24px;
+                        color: white;
+                        margin-bottom: 20px;
+                    }
+
+                
+                        h3{
+                            margin-top: 5px;
+                            color: #88949D;
+                            font-family: DroidSans;
+                            font-size: 12px;
+                            line-height: 21px;
+                        }
+
+                    
+                }
+
+                .foo-2{
+                    display: none;
+                }
+
                 .last{
                     margin-top: 15px;
                 }
             }
+
+            #nav-footer{
+                height: auto;
+
+                .custom-container{
+                    height: 50px;
+
+                    .mobile-version{
+                        display: block;
+                        text-align: center;
+                        padding-top: 10px;
+
+                        a{
+                            font-size: 20px;
+                            color: #ffffff;
+                            text-decoration: none;
+                            font-family: "DroidSans";
+                        }
+                    }
+
+                    ul{
+                        display: none;
+                    }
+
+                    small{
+                        display: none;
+                    }
+                }
+            }
         }
     }
-        
+}
+
+@media only screen and (min-width: 768px) and (max-width: 956px){
+    .medium-devices{
+        footer{
+            height: auto;
+
+            
+            #footer-content{
+                display: inline-block;
+                text-align: center;
+                margin-top: -20px;
+
+                li{
+                    display: block;
+                    text-align: justify;
+                    margin: 50px 20px;
+                    max-width: 0;
+
+                    h2{
+                        font-size: 25px !important;
+                        text-align: center;
+                    }
+
+                    p{
+                        font-size: 20px !important;                        
+                    }
+                }
+
+                .mobile-foo-2{
+                    max-width: 235px;
+                    list-style: none;
+                    margin-top: 50px;
+                    margin-bottom: 50px;
+                    height: 180px;
+                    overflow: visible;
+                    display: inline-block;              
+    
+                    h2{
+                        font-family: ColaborateThin;
+                        font-size: 24px;
+                        color: white;
+                        margin-bottom: 20px;
+                    }
+
+                
+                        h3{
+                            margin-top: 5px;
+                            color: #88949D;
+                            font-family: DroidSans;
+                            font-size: 12px;
+                            line-height: 21px;
+                        }
+
+                    
+                }
+
+                .foo-2{
+                    display: none;
+                }
+
+                .last{
+                    margin-top: 15px;
+                }
+            }
+
+            #nav-footer{
+                height: auto;
+
+                .custom-container{
+                    height: 50px;
+
+                    ul{
+                        width: 100%;
+                        margin: auto;
+                        text-align: center;
+                        
+                        li{
+                            a{
+                                font-size: 16px;
+                            }
+                        }
+                    }
+
+                    small{
+                        display: none;
+                    }
+                }
+            }
+
+        }
+    }
 }
