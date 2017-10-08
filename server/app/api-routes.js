@@ -8,8 +8,8 @@ const ajaxRequests = (app, db) => {
     });
 
     app.post('/api/postMediaFile', (req, res) => {
-        db.collection(imageUrlsCollection).insert({ imgUrl : req.body});
-        res.send('aaaaaaaaaaaaaaaaaaaaaaaa');
+        db.collection(imageUrlsCollection).insert({ imgUrl : req.body.userImgUrl });
+        res.send('Success');
     });
 
     app.get('/api/getComments', () => {

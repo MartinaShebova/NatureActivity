@@ -9,7 +9,8 @@
         "System": true,
         "$": true,
         "document": true,
-        "window": true
+        "window": true,
+        "toastr": true
     },
     "strict": "implied",
     "undef": true,

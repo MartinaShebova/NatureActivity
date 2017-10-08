@@ -13,12 +13,11 @@ const init = (data) => {
         });
     };
     
-    require('./api-routes')(app, data);
-    
-    app.get('/', getIndexHtml);
-
     app.use(bodyParser.json());
     app.use(bodyParser.urlencoded({ extended: true }));
+
+    app.get('/', getIndexHtml);    
+    require('./api-routes')(app, data);
 
     app.use('/static', express.static(__dirname + './../../public'));    
     app.use('/libs', express.static(__dirname + './../../node_modules'));    
