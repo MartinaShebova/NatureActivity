@@ -196,6 +196,12 @@
   .small-devices .title-wrapper {
     width: 100%;
   }
+  .small-devices .title-wrapper h1 {
+    padding-left: 20px;
+  }
+  .small-devices .breadcrumbs {
+    padding-left: 20px;
+  }
   .small-devices .common-template-wrapper .common-template-sub-wrapper {
     width: 100% !important;
   }
@@ -219,12 +225,20 @@
   .small-devices .common-template-wrapper .common-template-sub-wrapper .container .left-side .content-box .sub-text {
     font-size: 16px;
   }
+  .small-devices .common-template-wrapper .common-template-sub-wrapper .container .left-side .content-box .img-wrapper {
+    float: none;
+    margin: 0 auto;
+    width: 270px;
+    height: 300px;
+  }
   .small-devices .common-template-wrapper .common-template-sub-wrapper .container .left-side .content-box .text-wrapper {
     display: inline-block;
     padding-top: 10px;
+    font-size: 20px;
+    text-align: justify;
   }
   .small-devices .common-template-wrapper .common-template-sub-wrapper .container .left-side .content-box .readmore {
-    font-size: 16px;
+    font-size: 20px;
   }
   .small-devices .common-template-wrapper .common-template-sub-wrapper .container .left-side .content-box .readmore:last-child {
     float: none;
@@ -240,6 +254,12 @@
 @media only screen and (min-width: 769px) and (max-width: 958px) {
   .medium-devices .title-wrapper {
     width: 100%;
+  }
+  .medium-devices .title-wrapper h1 {
+    padding-left: 20px;
+  }
+  .medium-devices .breadcrumbs {
+    padding-left: 20px;
   }
   .medium-devices .common-template-wrapper .common-template-sub-wrapper {
     width: 100% !important;

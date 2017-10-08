@@ -198,8 +198,15 @@
       .small-devices{
         .title-wrapper{
           width: 100%;
+  
+          h1{
+              padding-left: 20px;
+          }
         }
-
+  
+        .breadcrumbs{
+            padding-left: 20px;
+        }
         .common-template-wrapper{
           
           .common-template-sub-wrapper{
@@ -228,15 +235,23 @@
                     .sub-text{
                       font-size: 16px;
                     }
+                    .img-wrapper{
+                      float: none;
+                      margin: 0 auto;
+                      width: 270px;
+                      height: 300px;
+                    }
 
                     .text-wrapper{
                       display: inline-block;
                       padding-top: 10px;
+                      font-size: 20px;
+                      text-align: justify;
                     }
         
                     .readmore{
 
-                      font-size: 16px;
+                      font-size: 20px;
 
                       &:last-child{
                         float: none;
@@ -261,6 +276,14 @@
       .medium-devices{
         .title-wrapper{
           width: 100%;
+  
+          h1{
+              padding-left: 20px;
+          }
+        }
+  
+        .breadcrumbs{
+            padding-left: 20px;
         }
 
         .common-template-wrapper{

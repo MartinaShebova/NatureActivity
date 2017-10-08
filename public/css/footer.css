@@ -148,6 +148,7 @@ footer #nav-footer .custom-container small p {
 @media only screen and (max-width: 768px) {
   .small-devices footer {
     width: 100%;
+    background: none;
   }
   .small-devices footer #footer-content {
     display: inline-block;
@@ -156,7 +157,6 @@ footer #nav-footer .custom-container small p {
   }
   .small-devices footer #footer-content li {
     display: block;
-    text-align: justify;
     margin: 50px 20px;
     max-width: 0;
   }
@@ -165,14 +165,14 @@ footer #nav-footer .custom-container small p {
     text-align: center;
   }
   .small-devices footer #footer-content li p {
-    font-size: 20px !important;
+    font-size: 14px !important;
+    text-align: center;
   }
   .small-devices footer #footer-content .mobile-foo-2 {
     max-width: 235px;
     list-style: none;
     margin-top: 50px;
     margin-bottom: 50px;
-    height: 180px;
     overflow: visible;
     display: inline-block;
   }
@@ -207,7 +207,8 @@ footer #nav-footer .custom-container small p {
     padding-top: 10px;
   }
   .small-devices footer #nav-footer .custom-container .mobile-version a {
-    font-size: 20px;
+    font-size: 16px;
+    padding: 25px;
     color: #ffffff;
     text-decoration: none;
     font-family: "DroidSans";
@@ -223,6 +224,7 @@ footer #nav-footer .custom-container small p {
 @media only screen and (min-width: 768px) and (max-width: 956px) {
   .medium-devices footer {
     height: auto;
+    background: none;
   }
   .medium-devices footer #footer-content {
     display: inline-block;
@@ -231,7 +233,6 @@ footer #nav-footer .custom-container small p {
   }
   .medium-devices footer #footer-content li {
     display: block;
-    text-align: justify;
     margin: 50px 20px;
     max-width: 0;
   }
@@ -247,7 +248,6 @@ footer #nav-footer .custom-container small p {
     list-style: none;
     margin-top: 50px;
     margin-bottom: 50px;
-    height: 180px;
     overflow: visible;
     display: inline-block;
   }

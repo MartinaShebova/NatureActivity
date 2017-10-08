@@ -84,3 +84,46 @@
 .add-comment-wrapper textarea {
   margin-top: 5px;
 }
+
+@media only screen and (max-width: 768px) {
+  .small-devices .title-wrapper {
+    width: 100%;
+  }
+  .small-devices .title-wrapper h1 {
+    padding-left: 20px;
+  }
+  .small-devices .breadcrumbs {
+    padding-left: 20px;
+  }
+  .small-devices .content-box {
+    text-align: center;
+  }
+  .small-devices .content-box .text-wrapper {
+    margin-left: 12%;
+  }
+  .small-devices .content-box .user-comment-box {
+    width: 80%;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 956px) {
+  .medium-devices .title-wrapper {
+    width: 100%;
+  }
+  .medium-devices .title-wrapper h1 {
+    padding-left: 20px;
+  }
+  .medium-devices .breadcrumbs {
+    padding-left: 20px;
+  }
+  .medium-devices .content-box {
+    text-align: center;
+  }
+  .medium-devices .content-box .text-wrapper {
+    margin-left: 12%;
+    text-align: justify;
+  }
+  .medium-devices .content-box .user-comment-box {
+    width: 80%;
+  }
+}

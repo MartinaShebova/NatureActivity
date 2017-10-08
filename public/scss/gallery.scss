@@ -83,10 +83,19 @@
 
       .title-wrapper{
         width: 100%;
+
+        h1{
+            padding-left: 20px;
+        }
+      }
+
+      .breadcrumbs{
+          padding-left: 20px;
       }
   
       #gallery-wrapper{
-
+        background-size: cover;
+        
         #main-gallery-container{
           width: 100% !important;
       
@@ -114,11 +123,20 @@
   @media only screen and (min-width: 768px) and (max-width: 959px){
     .medium-devices{
       
-            .title-wrapper{
-              width: 100%;
-            }
+      .title-wrapper{
+        width: 100%;
+
+        h1{
+            padding-left: 20px;
+        }
+      }
+
+      .breadcrumbs{
+          padding-left: 20px;
+      }
         
             #gallery-wrapper{
+              background-size: cover;
 
               #main-gallery-container{
                 width: 100% !important;
