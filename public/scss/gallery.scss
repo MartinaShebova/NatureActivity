@@ -76,3 +76,70 @@
         }
     }
   }
+
+  @media only screen and (max-width: 768px) {
+    
+    .small-devices{
+
+      .title-wrapper{
+        width: 100%;
+      }
+  
+      #gallery-wrapper{
+
+        #main-gallery-container{
+          width: 100% !important;
+      
+            .breadcrumbs {
+              font-size: 20px;
+            }
+      
+            .recent-work{
+                  .work{
+                    text-align: center;
+                      li{
+          
+                          .work-box{
+                            width: 180px;
+                            height: 150px;
+                          }
+                      }
+                  }
+            }
+        }
+      }
+    }
+  }
+  
+  @media only screen and (min-width: 768px) and (max-width: 959px){
+    .medium-devices{
+      
+            .title-wrapper{
+              width: 100%;
+            }
+        
+            #gallery-wrapper{
+
+              #main-gallery-container{
+                width: 100% !important;
+            
+                  .breadcrumbs {
+                    font-size: 20px;
+                  }
+            
+                  .recent-work{
+                        .work{
+                          text-align: center;
+                            li{
+                
+                                .work-box{
+                                  width: 180px;
+                                  height: 150px;
+                                }
+                            }
+                        }
+                  }
+              }
+            }
+          }
+  }
