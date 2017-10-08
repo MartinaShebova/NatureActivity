@@ -1,0 +1,163 @@
+#gallery-wrapper{
+    background-image: url("../images/main-background.png");
+    margin-top: 22px;
+    
+    #main-gallery-container{
+      margin: 0 auto;
+      width: 960px;
+      padding-bottom: 37px;
+  
+        .breadcrumbs {
+          font-size: 12px;
+          color: #7e7d7d;
+          padding-top: 29px;
+          padding-bottom: 50px;
+  
+          a{
+            color: #a3a3a3;
+            text-decoration: none;
+          }
+  
+          .raquo{
+            color: #7e7d7d;
+            padding: 4px;
+          }
+        }
+  
+        .recent-work{
+  
+      
+              .work{
+                  list-style-type: none;
+      
+                  li{
+                      display: inline-block;
+                      margin-right: 26px;
+                      margin-bottom: 50px;
+      
+                      .work-box{
+                          width: 145px;
+                          height: 94px;
+                          background-color: #25575E;
+                          border: 5px solid white;
+                          position: relative;
+                          -webkit-box-shadow: #4E4C4C 5px 5px 5px inset;
+                          -moz-box-shadow: #4E4C4C 5px 5px 5px inset;
+                          box-shadow: #4E4C4C 5px 5px 5px inset;
+  
+                          .media {
+                            height: 100%;
+                            width: 100%;
+
+                            &:hover{
+                                opacity: 0.8;
+                            }
+                          }
+                          
+                          .redirect{
+                              width: 28%;
+                              height: 35%;
+                              position: absolute;
+                              left: 25%;
+                              top: 35%;
+                          }
+    
+                          .enlarge{
+                            width: 28%;
+                            height: 35%;
+                            position: absolute;
+                            right: 23%;
+                            bottom: 30%;
+                            cursor: pointer;
+                          }
+                      }
+                  }
+              }
+        }
+    }
+  }
+
+  @media only screen and (max-width: 768px) {
+    
+    .small-devices{
+
+      .title-wrapper{
+        width: 100%;
+
+        h1{
+            padding-left: 20px;
+        }
+      }
+
+      .breadcrumbs{
+          padding-left: 20px;
+      }
+  
+      #gallery-wrapper{
+        background-size: cover;
+        
+        #main-gallery-container{
+          width: 100% !important;
+      
+            .breadcrumbs {
+              font-size: 20px;
+            }
+      
+            .recent-work{
+                  .work{
+                    text-align: center;
+                      li{
+          
+                          .work-box{
+                            width: 180px;
+                            height: 150px;
+                          }
+                      }
+                  }
+            }
+        }
+      }
+    }
+  }
+  
+  @media only screen and (min-width: 768px) and (max-width: 959px){
+    .medium-devices{
+      
+      .title-wrapper{
+        width: 100%;
+
+        h1{
+            padding-left: 20px;
+        }
+      }
+
+      .breadcrumbs{
+          padding-left: 20px;
+      }
+        
+            #gallery-wrapper{
+              background-size: cover;
+
+              #main-gallery-container{
+                width: 100% !important;
+            
+                  .breadcrumbs {
+                    font-size: 20px;
+                  }
+            
+                  .recent-work{
+                        .work{
+                          text-align: center;
+                            li{
+                
+                                .work-box{
+                                  width: 180px;
+                                  height: 150px;
+                                }
+                            }
+                        }
+                  }
+              }
+            }
+          }
+  }

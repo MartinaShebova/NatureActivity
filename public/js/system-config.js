@@ -11,7 +11,13 @@ System.config({
         'templates': '/static/js/templates.js',
 
         //Controllers
-        'homeController': '/static/js/controllers/homeController.js'
-
+        'homeController': '/static/js/controllers/homeController.js',
+        'galleryController': '/static/js/controllers/galleryController.js',
+        'earthquakesController': '/static/js/controllers/earthquakesController.js',
+        'weatherController': '/static/js/controllers/weatherController.js',
+        'initialController': '/static/js/controllers/initialController.js',
+        'uploadController': '/static/js/controllers/uploadController.js',
+        'singleController': '/static/js/controllers/singleController.js',
+        
     }
 });

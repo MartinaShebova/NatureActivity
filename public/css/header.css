@@ -1,0 +1,172 @@
+header {
+  position: relative;
+  margin: 0 auto;
+  width: 960px;
+}
+
+header #header-top #logo {
+  margin-top: 67px;
+  margin-left: 14px;
+  zoom: 1.2;
+}
+
+header #header-bottom {
+  margin-top: 19px;
+}
+
+header #header-bottom nav {
+  border-top: .5px solid #798897;
+  border-radius: 10px;
+  height: 49px;
+  /* IE10+ */
+  background-image: -ms-linear-gradient(left, #3D4751 0%, #3C4650 50%, #3D4751 100%);
+  /* Mozilla Firefox */
+  background-image: -moz-linear-gradient(left, #3D4751 0%, #3C4650 50%, #3D4751 100%);
+  /* Opera */
+  background-image: -o-linear-gradient(left, #3D4751 0%, #3C4650 50%, #3D4751 100%);
+  /* Webkit (Safari/Chrome 10) */
+  background-image: -webkit-gradient(linear, left top, right top, color-stop(0, #3D4751), color-stop(50, #3C4650), color-stop(100, #3D4751));
+  /* Webkit (Chrome 11+) */
+  background-image: -webkit-linear-gradient(left, #3D4751 0%, #3C4650 50%, #3D4751 100%);
+  /* W3C Markup */
+  background-image: linear-gradient(to right, #3D4751 0%, #3C4650 50%, #3D4751 100%);
+}
+
+header #header-bottom nav .toggle-wrapper {
+  display: none;
+}
+
+header #header-bottom nav .pull-left {
+  list-style-type: none;
+  margin-left: 10px;
+}
+
+header #header-bottom nav .pull-left li {
+  display: inline-block;
+  padding-left: 20px;
+  padding-top: 15px;
+}
+
+header #header-bottom nav .pull-left li a {
+  line-height: 15px;
+  text-decoration: none;
+  color: #ffffff;
+  font-family: DroidSans;
+  font-size: 13px;
+  text-shadow: 1px 1px 0 black;
+}
+
+header #header-bottom nav .pull-left li a:hover {
+  color: #8d96a0;
+  font-style: italic;
+}
+
+header #header-bottom nav .pull-left li .active {
+  color: #8d96a0;
+  font-style: italic;
+}
+
+header #header-bottom nav .pull-right {
+  margin-right: 23px;
+  list-style-type: none;
+}
+
+header #header-bottom nav .pull-right .share {
+  float: right;
+}
+
+header #header-bottom nav .pull-right .share .share-icon {
+  padding: 0 !important;
+}
+
+header #header-bottom nav .pull-right .share .share-icon img {
+  margin-top: 18px;
+  margin-right: 3px;
+  height: 15px;
+}
+
+header #header-bottom nav .pull-right:last-child img {
+  margin-top: 18px;
+  margin-right: 19px;
+  height: 13px;
+  width: 13px;
+}
+
+@media only screen and (max-width: 768px) {
+  .small-devices header {
+    width: 100%;
+  }
+  .small-devices header #header-bottom {
+    height: 200px;
+  }
+  .small-devices header #header-bottom #navigation {
+    height: 200px;
+    background-image: none;
+  }
+  .small-devices header #header-bottom #navigation .toggle-wrapper {
+    display: block;
+  }
+  .small-devices header #header-bottom #navigation .toggle-wrapper .toggle-button {
+    border-top: .5px solid #798897;
+    /* IE10+ */
+    background-image: -ms-linear-gradient(left, #3D4751 0%, #3C4650 50%, #3D4751 100%);
+    /* Mozilla Firefox */
+    background-image: -moz-linear-gradient(left, #3D4751 0%, #3C4650 50%, #3D4751 100%);
+    /* Opera */
+    background-image: -o-linear-gradient(left, #3D4751 0%, #3C4650 50%, #3D4751 100%);
+    /* Webkit (Safari/Chrome 10) */
+    background-image: -webkit-gradient(linear, left top, right top, color-stop(0, #3D4751), color-stop(50, #3C4650), color-stop(100, #3D4751));
+    /* Webkit (Chrome 11+) */
+    background-image: -webkit-linear-gradient(left, #3D4751 0%, #3C4650 50%, #3D4751 100%);
+    /* W3C Markup */
+    background-image: linear-gradient(to right, #3D4751 0%, #3C4650 50%, #3D4751 100%);
+    color: white;
+    text-align: center;
+    display: block;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 20px;
+  }
+  .small-devices header #header-bottom #navigation .toggle-wrapper .toggle-menu {
+    display: none;
+  }
+  .small-devices header #header-bottom #navigation .toggle-wrapper .toggle-menu ul {
+    list-style: none;
+    margin-left: 0;
+    width: 100%;
+    font-size: 18px;
+  }
+  .small-devices header #header-bottom #navigation .toggle-wrapper .toggle-menu li {
+    text-align: center;
+    padding: 0;
+  }
+  .small-devices header #header-bottom #navigation .toggle-wrapper .toggle-menu a {
+    text-decoration: none;
+    color: white;
+    background: black;
+    display: block;
+    padding: 10px 0;
+  }
+  .small-devices header #header-bottom #navigation .toggle-wrapper .toggle-menu a:hover {
+    color: #798897;
+    background: white;
+  }
+  .small-devices header #header-bottom #navigation .full-menu {
+    display: none;
+  }
+  .small-devices header #header-bottom #navigation li {
+    display: block;
+  }
+  .small-devices header #header-bottom #navigation .pull-right {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 956px) {
+  .medium-devices header {
+    width: 100%;
+  }
+  .medium-devices header #header-top {
+    text-align: center;
+  }
+}
