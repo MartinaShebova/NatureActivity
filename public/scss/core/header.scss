@@ -37,7 +37,11 @@ header{
     
         /* W3C Markup */ 
         background-image: linear-gradient(to right, #3D4751 0%, #3C4650 50%, #3D4751 100%);
-  
+
+        .toggle-wrapper{
+            display: none;
+        }
+
         .pull-left{
           list-style-type: none;
           margin-left: 10px;
@@ -104,16 +108,77 @@ header{
         header{
             width:100%;
 
-            // #header-top{
-            //     text-align: center;
-            // }
 
             #header-bottom{
                 height: 200px;
 
                 #navigation{
                     height: 200px;
+                    background-image: none;
 
+                    .toggle-wrapper{
+                        display: block;
+
+                        .toggle-button {
+                            border-top: .5px solid #798897;
+        
+                            /* IE10+ */ 
+                            background-image: -ms-linear-gradient(left, #3D4751 0%, #3C4650 50%, #3D4751 100%);
+                        
+                            /* Mozilla Firefox */ 
+                            background-image: -moz-linear-gradient(left, #3D4751 0%, #3C4650 50%, #3D4751 100%);
+                        
+                            /* Opera */ 
+                            background-image: -o-linear-gradient(left, #3D4751 0%, #3C4650 50%, #3D4751 100%);
+                        
+                            /* Webkit (Safari/Chrome 10) */ 
+                            background-image: -webkit-gradient(linear, left top, right top, color-stop(0, #3D4751), color-stop(50, #3C4650), color-stop(100, #3D4751));
+                        
+                            /* Webkit (Chrome 11+) */ 
+                            background-image: -webkit-linear-gradient(left, #3D4751 0%, #3C4650 50%, #3D4751 100%);
+                        
+                            /* W3C Markup */ 
+                            background-image: linear-gradient(to right, #3D4751 0%, #3C4650 50%, #3D4751 100%);
+                            color: white;
+                            text-align: center;
+                            display: block;
+                            cursor: pointer;
+                            font-size: 18px;
+                            border-radius: 20px;
+                            
+                        }
+                        .toggle-menu {
+                            display: none;
+                        }
+                        .toggle-menu ul{
+                            list-style: none;
+                            margin-left: 0;
+                            width: 100%;
+                            font-size: 18px;
+                        }
+                        
+                        .toggle-menu li {
+                            text-align: center;
+                            padding: 0;
+                        }
+                        
+                        .toggle-menu a {
+                            text-decoration: none;
+                            color: white;
+                            background: black;
+                            display: block;
+                            padding: 10px 0;
+                        }
+                        
+                        .toggle-menu a:hover {
+                            color: #798897;
+                            background: white;
+                        }
+                    }
+                    .full-menu{
+                        display: none;
+                    }
+                    
                     li{
                         display: block;
                     }

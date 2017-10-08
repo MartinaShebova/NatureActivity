@@ -36,3 +36,10 @@ $(window).on('resize', function() {
         $('body').removeClass();        
     }
 });
+
+$(document).ready(function(){
+    $("#toggle-button").click(function(){
+        $("#toggle-menu").toggle();
+        $("#dynamic-container").toggleClass('add-margin');
+    });
+});
