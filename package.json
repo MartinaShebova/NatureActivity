@@ -28,6 +28,7 @@
     "bootstrap": "^3.3.7",
     "browser-sync": "^2.18.13",
     "express": "^4.15.4",
+    "font-awesome": "^4.7.0",
     "handlebars": "^4.0.10",
     "handlebars-intl": "^1.1.2",
     "jquery": "^3.2.1",

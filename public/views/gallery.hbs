@@ -1,0 +1,28 @@
+<div class="title-wrapper">
+    <h1>Gallery</h1>
+</div>
+<div id="gallery-wrapper">
+    <div id="main-gallery-container">
+        <div class="breadcrumbs">
+            <a href="#/home">Home</a><span class="raquo">»</span>Gallery
+        </div>
+        <div class="recent-work">
+            <ul class="work">
+                {{#each this}}
+                <li>
+                    <div class="work-box">
+                        <img src={{this.imgUrl}} alt="Event Picture" class="media">
+                        <a href="javascript:void(0)">
+                            <img src="/static/images/featured-more.png" alt="" class="redirect">
+                        </a>
+                        <a href="javascript:void(0)" class="fancybox" title="Sample title">
+                            <img src="/static/images/zoom-icon.png" alt="" class="enlarge">                                          
+                        </a>
+                    </div>
+                </li>
+                {{/each}}
+            </ul>
+        </div>
+    </div>
+</div>
+</div>

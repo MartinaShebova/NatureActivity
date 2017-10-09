@@ -1,3 +1,96 @@
-<div>
-    
+<div class="carousel">
+    <div class="carousel-inner">
+        <div class="item">
+            <div class="carousel-cell">
+                <div class="carousel-caption-mine">
+                    <span>Title of work goes here</span>
+                </div>
+                <div class="p-icon-container">
+                    <span class="p-icon icon-left" role="button" data-slide="prev"><i class="fa fa-angle-left"></i></span>
+                    <span class="p-icon featured-more"><img src="/static/images/featured-more.png" alt=""></span>
+                    <span class="p-icon zoom"><i class="fa fa-search"></i></span>
+                    <span class="p-icon icon-right" role="button" data-slide="next"><i class="fa fa-angle-right"></i></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+        <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+        <span class="sr-only">Next</span>
+    </a>
+</div>
+
+<div id="features">
+    <div class="wrapper-center">
+        <ul id="features-list">
+            <li class="feature-one-two">
+                <img src="/static/images/f1-icon.png" alt="feature-icon" class="services-icons" />
+                <div class="f-1">
+                    <h2>Who am I</h2>
+                    <p>My name is Martina Shebova. I am 26 years old. 
+						I have made this website for the Telerik Academy's final Front End Track
+						course. I hope you would like it. 
+						You can contact with me by Facebook, GitHub and Linkedin. Enjoy!
+                    </p>
+                    <form action="/">
+                        <input type="image" src="/static/images/readmore.png" alt="Read more" class="read-more">
+                    </form>
+                </div>
+            </li>
+            <li class="feature-one-two">
+                <img src="/static/images/f2-icon.png" alt="feature-icon" class="services-icons" />
+                <div class="f-1">
+                    <h2>Weather</h2>
+                    <p>Weather activity in the biggest Europe cities. 
+						Share your pictures from the epicenter of the events. 
+						Take a picture from a storm, moment of an earthquake, or just a nice flower. 
+						Share your point of view for different nature events. 
+                    </p>
+                    <form action="">
+                        <input type="image" src="/static/images/readmore.png" alt="Read more" class="read-more">
+                    </form>
+                </div>
+            </li>
+            <li class="feature-one-two">
+                <img src="/static/images/f3-icon.png" alt="feature-icon" class="services-icons" />
+                <div class="f-1">
+                    <h2>Earthquakes</h2>
+                    <p>Latest Earthquakes information.
+                        Share your pictures from the epicenter of the events. 
+						Take a picture from a storm, moment of an earthquake, or just a nice flower. 
+						Share your point of view for different nature events.
+                    </p>
+                    <form action="/action_page.php">
+                        <input type="image" src="/static/images/readmore.png" alt="Read more" class="read-more">
+                    </form>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div id="info">
+        <div class="wrapper-center">
+            <img src="/static/images/quote.png" alt="quote-icon" id="quote" />
+            <p class="text">Bad things do happen in the world, like war, natural disasters, disease. In those situations always arise stories of ordinary people doing extraordinary things.</p>
+        </div>
+    </div>
+    <!--End info-->
+    <div class="wrapper-center">
+        <img src="/static/images/additional-info.png" alt="additional-info-icon" id="additional-info" />
+    </div>
+    <div id="recent-work">
+        <div class="wrapper-center">
+            <ul class="work">
+                {{#each this}}
+                <li>
+                    <div class="work-box">
+                        <img src={{this.imgUrl}} alt="Visitor Image" class="home-gallery"/>
+                    </div>
+                </li>
+                {{/each}}
+            </ul>
+        </div>
+    </div>
 </div>

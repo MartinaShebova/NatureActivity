@@ -1,18 +1,17 @@
 import { getTemplate } from 'templates';
 import { requester } from 'requester';
 
-export function home() {
+export function gallery() {
 
-    Promise.all([getTemplate('home'), requester.get('/api/getMediaFile', {})])
+    Promise.all([getTemplate('gallery'), requester.get('/api/getMediaFile', {})])
         .then(([templateFunction, data]) => {
         
-        let sliceToTen = data.slice(0, 10);
-        
-        let templateWithData = templateFunction(sliceToTen);
+        let templateWithData = templateFunction(data);
 
         $('#dynamic-container').html(templateWithData);
 
         }, (error) => {
             console.log(error);
         });
+
 }
