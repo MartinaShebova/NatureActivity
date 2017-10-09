@@ -5,7 +5,6 @@ let request = (url, type, body, headers) => {
             type,
             data: body,
             headers,
-            contentType: 'application/json',
             success(response) {
                 resolve(response);
             },
@@ -33,7 +32,7 @@ let requester = {
     del(url, headers) {
         return request(url, 'DELETE', {}, headers);
     }
-}
+};
 
 export {
     requester

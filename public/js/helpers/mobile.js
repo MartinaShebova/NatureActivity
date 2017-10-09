@@ -41,5 +41,15 @@ $(document).ready(function(){
     $("#toggle-button").click(function(){
         $("#toggle-menu").toggle();
         $("#dynamic-container").toggleClass('add-margin');
+
+        $("#toggle-dropdown").hide();
     });
+
+    $(".dropdown").click(function(){
+        $("#toggle-dropdown").toggle();
+    });
+
+    if(view < 768){
+        $("#toggle-dropdown li a").css("border-bottom", "2px solid yellow");
+    }
 });

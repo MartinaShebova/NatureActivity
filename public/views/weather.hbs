@@ -1,110 +1,53 @@
 <div class="title-wrapper">
-    <h1>Latest Earthquakes</h1>
+    <h1>Weather in {{this.location.name}} ({{this.location.country}})</h1>
 </div>
 <div class="common-template-wrapper">
     <div class="common-template-sub-wrapper">
         <div class="breadcrumbs">
-            <a href="#/home">Home</a><span class="raquo">»</span>Earthquakes
+            <a href="#/home">Home</a><span class="raquo">»</span>{{this.location.name}} ({{this.location.country}}) - Weather
         </div>
         <div class="container">
             <div class="left-side">
                 <div class="content-box">
-                    <p class="content-title">Martina</p>
                     <img src="/static/images/border.png" alt="Stylish border" class="border-pic">
-                    <p class="sub-text">Data</p>
+                    <p class="sub-text" id="heading" value={{this.location.name}}><strong>{{this.current.condition.text}}</strong></p>
                     <div class="img-wrapper">
-                        <img src="https://www.codeproject.com/KB/GDI-plus/ImageProcessing2/img.jpg" alt="Event Picture">
+                        <img src="/static/images/weather-conditions.jpg" alt="Event Picture">
                     </div>
                     <p class="text-wrapper">
-                        Sed tempor lectus in risus. Nullam vestibulum, odio ac pulvinar condimentum, urna neque aliquet ipsum, in blandit velit nunc
-                        eget mauris. Suspendisse aliquet sem ut nulla. Cras mollis ornare nisl. Morbi ac mi. Nunc eget nisi.
-                        Donec at enim. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis
-                        egestas. Sed diam. Ut sagittis ultrices urna. Suspendisse eget erat non purus varius sodales.Vivamus
-                        volutpat risus non est. Nullam et ipsum. Nunc ac risus. Pellentesque consectetuer nisi a nulla porttitor
-                        tincidunt. Cras pretium pede ut ligula. Morbi semper ante. Nullam...
+                        <p>Date: <strong>{{this.forecast.forecastday.0.date}}</strong></p>                        
+                        <p>Temperature: <strong>{{this.current.temp_c}}&#8451;</strong></p>
+                        <p>Humidity: <strong>{{this.current.humidity}}&#37</strong></p>
+                        <p>Sunrise: <strong>{{this.forecast.forecastday.0.astro.sunrise}}</strong></p>
+                        <p>Sunset: <strong>{{this.forecast.forecastday.0.astro.sunset}}</strong></p>
                     </p>
-                    <a href="http://www.elegantthemes.com/preview/Envisioned/2008/09/05/ut-sagittis-ultrices-urna-eget-erat-non-purus-varius/" class="readmore">
-                        <span>Read More</span>
-                    </a>
-                </div>
-                <div class="content-box">
-                    <p class="content-title">Martina</p>
-                    <p class="sub-text">Data</p>
-                    <div class="img-wrapper">
-                        <img src="https://www.codeproject.com/KB/GDI-plus/ImageProcessing2/img.jpg" alt="">
-                    </div>
-                    <p class="text-wrapper">
-                        Sed tempor lectus in risus. Nullam vestibulum, odio ac pulvinar condimentum, urna neque aliquet ipsum, in blandit velit nunc
-                        eget mauris. Suspendisse aliquet sem ut nulla. Cras mollis ornare nisl. Morbi ac mi. Nunc eget nisi.
-                        Donec at enim. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis
-                        egestas. Sed diam. Ut sagittis ultrices urna. Suspendisse eget erat non purus varius sodales.Vivamus
-                        volutpat risus non est. Nullam et ipsum. Nunc ac risus. Pellentesque consectetuer nisi a nulla porttitor
-                        tincidunt. Cras pretium pede ut ligula. Morbi semper ante. Nullam...
-                    </p>
-                    <a href="http://www.elegantthemes.com/preview/Envisioned/2008/09/05/ut-sagittis-ultrices-urna-eget-erat-non-purus-varius/"
-                        class="readmore"><span>Read More</span></a>
-                </div>
-                <div class="content-box">
-                    <p class="content-title">Martina</p>
-                    <p class="sub-text">Data</p>
-                    <div class="img-wrapper">
-                        <img src="https://www.codeproject.com/KB/GDI-plus/ImageProcessing2/img.jpg" alt="">
-                    </div>
-                    <p class="text-wrapper">
-                        Sed tempor lectus in risus. Nullam vestibulum, odio ac pulvinar condimentum, urna neque aliquet ipsum, in blandit velit nunc
-                        eget mauris. Suspendisse aliquet sem ut nulla. Cras mollis ornare nisl. Morbi ac mi. Nunc eget nisi.
-                        Donec at enim. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis
-                        egestas. Sed diam. Ut sagittis ultrices urna. Suspendisse eget erat non purus varius sodales.Vivamus
-                        volutpat risus non est. Nullam et ipsum. Nunc ac risus. Pellentesque consectetuer nisi a nulla porttitor
-                        tincidunt. Cras pretium pede ut ligula. Morbi semper ante. Nullam...
-                    </p>
-                    <a href="http://www.elegantthemes.com/preview/Envisioned/2008/09/05/ut-sagittis-ultrices-urna-eget-erat-non-purus-varius/"
-                        class="readmore"><span>Read More</span></a>
-                </div>
-                <div class="content-box">
-                    <p class="content-title">Martina</p>
-                    <p class="sub-text">Data</p>
-                    <div class="img-wrapper">
-                        <img src="https://www.codeproject.com/KB/GDI-plus/ImageProcessing2/img.jpg" alt="">
-                    </div>
-                    <p class="text-wrapper">
-                        Sed tempor lectus in risus. Nullam vestibulum, odio ac pulvinar condimentum, urna neque aliquet ipsum, in blandit velit nunc
-                        eget mauris. Suspendisse aliquet sem ut nulla. Cras mollis ornare nisl. Morbi ac mi. Nunc eget nisi.
-                        Donec at enim. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis
-                        egestas. Sed diam. Ut sagittis ultrices urna. Suspendisse eget erat non purus varius sodales.Vivamus
-                        volutpat risus non est. Nullam et ipsum. Nunc ac risus. Pellentesque consectetuer nisi a nulla porttitor
-                        tincidunt. Cras pretium pede ut ligula. Morbi semper ante. Nullam...
-                    </p>
-                    <a href="http://www.elegantthemes.com/preview/Envisioned/2008/09/05/ut-sagittis-ultrices-urna-eget-erat-non-purus-varius/"
-                        class="readmore"><span>Read More</span></a>
-                </div>
-                <div class="content-box">
-                    <p class="content-title">Martina</p>
-                    <p class="sub-text">Data</p>
-                    <div class="img-wrapper">
-                        <img src="https://www.codeproject.com/KB/GDI-plus/ImageProcessing2/img.jpg" alt="">
-                    </div>
-                    <p class="text-wrapper">
-                        Sed tempor lectus in risus. Nullam vestibulum, odio ac pulvinar condimentum, urna neque aliquet ipsum, in blandit velit nunc
-                        eget mauris. Suspendisse aliquet sem ut nulla. Cras mollis ornare nisl. Morbi ac mi. Nunc eget nisi.
-                        Donec at enim. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis
-                        egestas. Sed diam. Ut sagittis ultrices urna. Suspendisse eget erat non purus varius sodales.Vivamus
-                        volutpat risus non est. Nullam et ipsum. Nunc ac risus. Pellentesque consectetuer nisi a nulla porttitor
-                        tincidunt. Cras pretium pede ut ligula. Morbi semper ante. Nullam...
-                    </p>
-                    <a href="http://www.elegantthemes.com/preview/Envisioned/2008/09/05/ut-sagittis-ultrices-urna-eget-erat-non-purus-varius/"
-                        class="readmore"><span>Read More</span></a>
                 </div>
                 <div class="clearfix"></div>
-                <div class="page-nav-wrapper">
-                    <span class="pages">Page 1 of 2</span>
-                    <span class="current">1</span>
-                    <a class="next" title="Page 2" href="http://www.elegantthemes.com/preview/Envisioned/category/blog/page/2/">
-                        2
-                    </a>
-                    <a class="next-sign" rel="next" href="http://www.elegantthemes.com/preview/Envisioned/category/blog/page/2/">
-                        »
-                    </a>
+                <div class="content-box">
+                    <p class="content-title">Number of comments</p>
+                    <div id="comments">
+                        <img src="/static/images/border.png" alt="Stylish border" class="border-pic">
+                        <div class="clearfix"></div>
+                    </div>
+                    {{#each this.comments}}
+                        <div class="user-img">
+                            <img src="/static/images/user-pic.png" alt="Event Picture">
+                        </div>
+                        <div class="user-comment-box">
+                            <p class="user-name">{{this.username}}</p>
+                            <div class="user-comment">{{this.comment}}</div>
+                        </div>
+                    {{/each}}
+                    <div class="clearfix"></div>
+                    <div class="add-comment-wrapper">
+                        <p class="content-title">Leave a comment</p>
+                        <img src="/static/images/border.png" alt="Stylish border" class="border-pic">
+                        <input type="text" placeholder="Your Name" id="username"/>
+                        <textarea name="" id="comment-area" col="30" rows="10" placeholder="Your comment ..."></textarea>
+                        <input type="button" value="Add comment" id="add-comment-btn"/>
+                    </div>
+
+
                 </div>
             </div>
             <div class="sidebar">

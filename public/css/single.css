@@ -21,7 +21,7 @@
   border: 1px solid lightgrey;
   border-radius: 10px;
   padding: 20px;
-  width: 525px;
+  width: 500px;
   height: 200px;
   display: inline-block;
   margin-left: 12px;
@@ -81,6 +81,12 @@
   height: 40px;
 }
 
+.add-comment-wrapper #add-comment-btn {
+  margin-top: 5px;
+  background-color: #000000;
+  color: #ffffff;
+}
+
 .add-comment-wrapper textarea {
   margin-top: 5px;
 }
@@ -100,6 +106,10 @@
   }
   .small-devices .content-box .text-wrapper {
     margin-left: 12%;
+  }
+  .small-devices .content-box .user-img {
+    margin: 0 auto;
+    float: none;
   }
   .small-devices .content-box .user-comment-box {
     width: 80%;
@@ -125,5 +135,9 @@
   }
   .medium-devices .content-box .user-comment-box {
     width: 80%;
+  }
+  .medium-devices .content-box .user-img {
+    position: absolute;
+    float: none;
   }
 }
