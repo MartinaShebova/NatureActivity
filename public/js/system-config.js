@@ -15,9 +15,16 @@ System.config({
         'galleryController': '/static/js/controllers/galleryController.js',
         'earthquakesController': '/static/js/controllers/earthquakesController.js',
         'weatherController': '/static/js/controllers/weatherController.js',
-        'initialController': '/static/js/controllers/initialController.js',
         'uploadController': '/static/js/controllers/uploadController.js',
         'singleController': '/static/js/controllers/singleController.js',
+
+        //Validator
+        'Validator': '/static/js/validator/Validator.js',
+
+        //Models
+        'UploadImgUrlModel': '/static/js/models/UploadImgUrlModel.js',
+
+        //API helpers
         
     }
 });

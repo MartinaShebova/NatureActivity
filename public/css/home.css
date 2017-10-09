@@ -243,8 +243,13 @@
   box-shadow: #4E4C4C 5px 5px 5px inset;
 }
 
-#recent-work .wrapper-center .work li .work-box:hover {
-  background-color: #6D8E93;
+#recent-work .wrapper-center .work li .work-box .home-gallery {
+  width: 100%;
+  height: 100%;
+}
+
+#recent-work .wrapper-center .work li .work-box .home-gallery:hover {
+  opacity: 0.5;
 }
 
 /* Media End */

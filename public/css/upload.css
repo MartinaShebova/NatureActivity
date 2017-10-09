@@ -35,6 +35,7 @@
   font-size: 14px;
   outline: 0;
   text-align: center;
+  width: 60%;
 }
 
 #upload-wrapper #main-upload-container .upload-btn {
@@ -47,6 +48,7 @@
   background: #262d35;
   padding: 5px 8px 5px 8px;
   border: solid #050505 1px;
+  outline: 0;
 }
 
 #upload-wrapper #main-upload-container .upload-btn:hover {
@@ -56,6 +58,7 @@
   -webkit-box-shadow: #B3B3B3 2px 2px 2px;
   -moz-box-shadow: #B3B3B3 2px 2px 2px;
   text-decoration: none;
+  outline: 0;
 }
 
 @media only screen and (max-width: 768px) {

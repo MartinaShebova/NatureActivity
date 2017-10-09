@@ -1,12 +1,19 @@
 import { getTemplate } from 'templates';
+import { requester } from 'requester';
+
 export function single() {
 
-    getTemplate('single')
-        .then((templateFunc) => {
-            //Render template
-            let html = templateFunc();
+    let currentEvent = window.location.href.slice(31);
+    
+    Promise.all([getTemplate('single'), requester.get(`/api/getSingleEvent/${currentEvent}`, {})])
+    .then(([templateFunction, data]) => {
+        
+        let templateWithData = templateFunction(data[0]);
 
-            $('#dynamic-container').html(html);
-        });
+        $('#dynamic-container').html(templateWithData);
+
+    }, (error) => {
+        console.log(error);
+    });
 
 }

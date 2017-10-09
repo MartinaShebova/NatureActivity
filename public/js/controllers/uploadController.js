@@ -1,5 +1,6 @@
 import { getTemplate } from 'templates';
 import { requester } from 'requester';
+import { UploadImgUrlModel } from 'UploadImgUrlModel';
 export function upload() {
 
     getTemplate('upload')
@@ -8,13 +9,18 @@ export function upload() {
             let html = templateFunc();
 
             $('#dynamic-container').html(html);
-
-
         });
 
     $("body").on('click', ".upload-btn", () => {
 
-        let userImgUrl = $("#user-img-url").val();
+        let userImgUrl = $("#user-img-url").val(),
+            isValid;
+
+        try{
+            isValid = new UploadImgUrlModel(userImgUrl);            
+        }catch(Error){
+            return;
+        }
 
         requester.post('/api/postMediaFile',  { userImgUrl: userImgUrl }, {})
             .then(() => {
@@ -24,20 +30,4 @@ export function upload() {
             });
 
     });
-
-
 }
-
-// Promise.all([getTemplate('home'), data.getAds()])
-// .then(([templateFunc, adsData]) => {
-
-
-//     let getOnlyFourAds = adsData.slice(0, 4);
-
-//     let adsInfoObject = templateFunc(getOnlyFourAds);
-
-//     $('#dinamic-container').html(adsInfoObject);
-//         $('.flexslider').flexslider({
-//             animation: "slide"
-//         });
-// });

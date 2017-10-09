@@ -1,12 +1,17 @@
 import { getTemplate } from 'templates';
+import { requester } from 'requester';
+
 export function gallery() {
 
-    getTemplate('gallery')
-        .then((templateFunc) => {
-            //Render template
-            let html = templateFunc();
+    Promise.all([getTemplate('gallery'), requester.get('/api/getMediaFile', {})])
+        .then(([templateFunction, data]) => {
+        
+        let templateWithData = templateFunction(data);
 
-            $('#dynamic-container').html(html);
+        $('#dynamic-container').html(templateWithData);
+
+        }, (error) => {
+            console.log(error);
         });
 
 }

@@ -66,6 +66,48 @@ header #header-bottom nav .pull-left li .active {
   font-style: italic;
 }
 
+header #header-bottom nav .pull-left .dropdown ul {
+  list-style: none;
+  padding: 10px;
+  display: none;
+  width: 219px;
+  background-color: #3D4751;
+  border-bottom-right-radius: 8px;
+  border-bottom-left-radius: 8px;
+  margin-left: 0;
+}
+
+header #header-bottom nav .pull-left .dropdown ul li {
+  display: block;
+  position: relative;
+  float: left;
+  border: 1px solid #000;
+}
+
+header #header-bottom nav .pull-left .dropdown ul li a {
+  display: block;
+  padding: 5px 10px 5px 10px;
+  text-decoration: none;
+  white-space: nowrap;
+  color: #fff;
+  font-family: "DroidSans";
+}
+
+header #header-bottom nav .pull-left .dropdown ul li a:hover {
+  color: #8d96a0;
+}
+
+header #header-bottom nav .pull-left .dropdown:hover ul {
+  display: block;
+  position: absolute;
+  z-index: 100;
+}
+
+header #header-bottom nav .pull-left .dropdown:hover ul li {
+  float: none;
+  border: none;
+}
+
 header #header-bottom nav .pull-right {
   margin-right: 23px;
   list-style-type: none;
@@ -139,6 +181,7 @@ header #header-bottom nav .pull-right:last-child img {
   .small-devices header #header-bottom #navigation .toggle-wrapper .toggle-menu li {
     text-align: center;
     padding: 0;
+    background-color: #ffffff;
   }
   .small-devices header #header-bottom #navigation .toggle-wrapper .toggle-menu a {
     text-decoration: none;

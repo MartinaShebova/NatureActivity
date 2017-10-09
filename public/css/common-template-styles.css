@@ -41,6 +41,7 @@
 .common-template-wrapper .common-template-sub-wrapper .container .left-side .content-box {
   padding: 0px 60px 40px 0px;
   position: relative;
+  margin: 20px;
 }
 
 .common-template-wrapper .common-template-sub-wrapper .container .left-side .content-box .content-title {
@@ -90,7 +91,7 @@
   background: #262d35;
   padding: 5px 8px 5px 8px;
   border: solid #050505 1px;
-  margin: 15px 10px 0 0;
+  margin: 60px 0;
   width: inherit;
 }
 
@@ -239,9 +240,6 @@
   }
   .small-devices .common-template-wrapper .common-template-sub-wrapper .container .left-side .content-box .readmore {
     font-size: 20px;
-  }
-  .small-devices .common-template-wrapper .common-template-sub-wrapper .container .left-side .content-box .readmore:last-child {
-    float: none;
   }
   .small-devices .common-template-wrapper .common-template-sub-wrapper .container .sidebar {
     display: table;
