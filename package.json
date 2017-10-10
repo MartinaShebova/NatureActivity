@@ -4,9 +4,9 @@
   "description": "The final project for Telerik Academy Front End Track",
   "main": "index.js",
   "scripts": {
-    "preinstall": "gulp build",
     "start": "node server.js",
-    "dev": "node server.js"
+    "dev": "node server.js",
+    "preinstall": "gulp build"
   },
   "engines": {
     "node": "6.11.x",

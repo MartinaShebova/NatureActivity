@@ -14,7 +14,7 @@ var _requester = require('requester');
 
 function weather() {
 
-    var apiUrl = 'http://api.apixu.com/v1/forecast.json?key=c2878ace8bde4c918d6134557170910&q=',
+    var apiUrl = 'https://api.apixu.com/v1/forecast.json?key=c2878ace8bde4c918d6134557170910&q=',
         cities = {
         Sofia: 'Sofia',
         London: 'London',
