@@ -1,25 +1,25 @@
 <div class="title-wrapper">
-    <h1>{{this.title}}</h1>
+    <h1>{{this.0.title}}</h1>
 </div>
 <div class="common-template-wrapper">
     <div class="common-template-sub-wrapper">
         <div class="breadcrumbs">
-            <a href="#/home">Home</a><span class="raquo">»</span>Single
+            <a href="#/home">Home</a><span class="raquo">»</span>{{this.0.title}}
         </div>
         <div class="container">
             <div class="left-side">
                 <div class="content-box">
                     <img src="/static/images/border.png" alt="Stylish border" class="border-pic">
-                    <p class="sub-text">{{this.location}}</p>
+                    <p class="sub-text" id="heading" value={{this.0.location.name}}>{{this.0.location}}</p>
                     <div class="img-wrapper">
-                        <img src={{this.image}} alt="Event Picture">
+                        <img src={{this.0.image}} alt="Event Picture">
                     </div>
                     <p class="text-wrapper">
-                        <p>Date: <strong>{{this.date_time}}</strong></p>                        
-                        <p>Magnitude: <strong>{{this.magnitude}}</strong></p>
-                        <p>Longitude: <strong>{{this.longitude}}</strong></p>
-                        <p>Latitude: <strong>{{this.latitude}}</strong></p>
-                        <p>Depth: <strong>{{this.depth}}</strong></p>
+                        <p>Date: <strong>{{this.0.date_time}}</strong></p>
+                        <p>Magnitude: <strong>{{this.0.magnitude}}</strong></p>
+                        <p>Longitude: <strong>{{this.0.longitude}}</strong></p>
+                        <p>Latitude: <strong>{{this.0.latitude}}</strong></p>
+                        <p>Depth: <strong>{{this.0.depth}}</strong></p>
                     </p>
                 </div>
                 <div class="clearfix"></div>
@@ -27,22 +27,23 @@
                     <p class="content-title">Number of comments</p>
                     <img src="/static/images/border.png" alt="Stylish border" class="border-pic">
                     <div class="clearfix"></div>
+                    {{#each this.commentsData}}
                     <div class="user-img">
-                        <img src="https://www.codeproject.com/KB/GDI-plus/ImageProcessing2/img.jpg" alt="Event Picture">
+                        <img src="/static/images/user-pic.png" alt="Event Picture">
                     </div>
                     <div class="user-comment-box">
-                        <p class="user-name">User Name</p>
-                        <div class="user-comment">TExtTExtTExtTExtTExtTExtTExtTExtTExtTExtTExtTExtTExtTExtTExtTExtTExtTExtTExt</div>
+                        <p class="user-name">{{this.username}}</p>
+                        <div class="user-comment">{{this.comment}}</div>
                     </div>
+                    {{/each}}
                     <div class="clearfix"></div>
                     <div class="add-comment-wrapper">
                         <p class="content-title">Leave a comment</p>
                         <img src="/static/images/border.png" alt="Stylish border" class="border-pic">
-                        <input type="text" placeholder="Your Name" />
-                        <textarea name="" id="comment-area" col="30" rows="10" placeholder="Your comment ..."></textarea>
+                        <input type="text" placeholder="Your Name" id="event-username" />
+                        <textarea name="" id="event-comment-area" col="30" rows="10" placeholder="Your comment ..."></textarea>
+                        <input type="button" value="Add comment" id="add-event-comment-btn" />
                     </div>
-
-
                 </div>
             </div>
             <div class="sidebar">

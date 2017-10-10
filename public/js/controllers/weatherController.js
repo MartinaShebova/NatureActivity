@@ -34,6 +34,8 @@ export function weather() {
 
             $('#dynamic-container').html(templateWithData);
 
+            $(".common-template-wrapper").css("background-image", "url('/static/images/main-background.png')");
+            
         }, (error) => {
             console.log(error);
         });
@@ -56,7 +58,7 @@ $("body").on('click', "#add-comment-btn", () => {
     //     return;
     // }
 
-    requester.post('/api/postComment', userInfoObj, {})
+    requester.post('/api/postWeatherComment', userInfoObj, {})
         .then(() => {
             toastr.success('Comment Send Successfully');
             $("#username").val('');

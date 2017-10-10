@@ -39,7 +39,16 @@ const ajaxRequests = (app, db) => {
 
     });
 
-    app.post('/api/postComment', (req, res) => {
+    app.post('/api/postWeatherComment', (req, res) => {
+        db.collection(commentsCollection).insert(req.body)
+        .then(() => {
+            res.status(200).send('Successfully recorded comment into DB');           
+        }, () => {
+            res.status(400).send('An error occured');  
+        });
+    });
+
+    app.post('/api/postEventComment', (req, res) => {
         db.collection(commentsCollection).insert(req.body)
         .then(() => {
             res.status(200).send('Successfully recorded comment into DB');           
@@ -52,6 +61,16 @@ const ajaxRequests = (app, db) => {
         console.log(req.params.id);
         
         db.collection(earthquakesFeed).find({ _id: new ObjectID(req.params.id) }).toArray()
+        .then((allfiles) => {            
+            res.status(200).json(allfiles);
+        });
+
+    });
+
+    app.get('/api/getSingleEventComments/:id', (req, res) => {
+        console.log(req.params.id);
+        
+        db.collection(commentsCollection).find({ eventId: req.params.id}).toArray()
         .then((allfiles) => {            
             res.status(200).json(allfiles);
         });

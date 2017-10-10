@@ -1,5 +1,5 @@
 #gallery-wrapper{
-    background-image: url("../images/main-background.png");
+    // background-image: url("../images/main-background.png");
     margin-top: 22px;
     
     #main-gallery-container{
@@ -44,6 +44,14 @@
                           -webkit-box-shadow: #4E4C4C 5px 5px 5px inset;
                           -moz-box-shadow: #4E4C4C 5px 5px 5px inset;
                           box-shadow: #4E4C4C 5px 5px 5px inset;
+
+                          &:hover .redirect{
+                            display: block;
+                          }
+
+                          &:hover .enlarge{
+                            display: block;
+                          }
   
                           .media {
                             height: 100%;
@@ -60,6 +68,8 @@
                               position: absolute;
                               left: 25%;
                               top: 35%;
+                              display: none;
+
                           }
     
                           .enlarge{
@@ -69,6 +79,7 @@
                             right: 23%;
                             bottom: 30%;
                             cursor: pointer;
+                            display: none;
                           }
                       }
                   }

@@ -112,7 +112,6 @@
 /* Carousel End*/
 /* Services */
 #features {
-  background: url("../images/main-background.png");
   height: 925px;
   width: 100%;
 }
@@ -163,8 +162,9 @@
   font-family: DroidSans;
 }
 
-#features .wrapper-center #features-list .feature-one-two .f-1 form {
+#features .wrapper-center #features-list .feature-one-two .f-1 #readmore-btn {
   display: block;
+  outline: 0;
 }
 
 #features .wrapper-center #features-list .feature-one-two:last-child {
@@ -174,7 +174,6 @@
 /* End Services */
 /* Quote */
 #info {
-  background: url("./../images/quote-box.png");
   height: 158px;
   width: 100%;
   margin-top: 40px;

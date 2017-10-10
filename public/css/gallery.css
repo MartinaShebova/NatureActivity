@@ -1,5 +1,4 @@
 #gallery-wrapper {
-  background-image: url("../images/main-background.png");
   margin-top: 22px;
 }
 
@@ -47,6 +46,14 @@
   box-shadow: #4E4C4C 5px 5px 5px inset;
 }
 
+#gallery-wrapper #main-gallery-container .recent-work .work li .work-box:hover .redirect {
+  display: block;
+}
+
+#gallery-wrapper #main-gallery-container .recent-work .work li .work-box:hover .enlarge {
+  display: block;
+}
+
 #gallery-wrapper #main-gallery-container .recent-work .work li .work-box .media {
   height: 100%;
   width: 100%;
@@ -62,6 +69,7 @@
   position: absolute;
   left: 25%;
   top: 35%;
+  display: none;
 }
 
 #gallery-wrapper #main-gallery-container .recent-work .work li .work-box .enlarge {
@@ -71,6 +79,7 @@
   right: 23%;
   bottom: 30%;
   cursor: pointer;
+  display: none;
 }
 
 @media only screen and (max-width: 768px) {

@@ -4,7 +4,9 @@
   "description": "The final project for Telerik Academy Front End Track",
   "main": "index.js",
   "scripts": {
-    "dev": "node server.js"
+    "start": "node server.js",
+    "dev": "node server.js",
+    "preinstall": "gulp build"
   },
   "repository": {
     "type": "git",
@@ -19,6 +21,8 @@
   "dependencies": {
     "@types/bootstrap": "^3.3.36",
     "@types/browser-sync": "0.0.36",
+    "@types/gulp-concat": "0.0.31",
+    "@types/gulp-rename": "0.0.32",
     "@types/handlebars": "^4.0.36",
     "@types/jquery": "^3.2.12",
     "@types/navigo": "^4.0.1",
@@ -29,6 +33,13 @@
     "browser-sync": "^2.18.13",
     "express": "^4.15.4",
     "font-awesome": "^4.7.0",
+    "gulp-clean": "^0.3.2",
+    "gulp-clean-css": "^3.9.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-cssmin": "^0.2.0",
+    "gulp-imagemin": "^3.4.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sync": "^0.1.4",
     "handlebars": "^4.0.10",
     "handlebars-intl": "^1.1.2",
     "jquery": "^3.2.1",
