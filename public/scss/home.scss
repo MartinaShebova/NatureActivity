@@ -113,7 +113,7 @@
 /* Services */
 
 #features{
-    background: url("../images/main-background.png");
+    // background: url("../images/main-background.png");
     height: 925px;
     width: 100%;
 
@@ -156,8 +156,9 @@
                         overflow: hidden;
                         font-family: DroidSans;
                     }
-                    form{
+                    #readmore-btn{
                         display: block;
+                        outline: 0;
                     }
                 }
 
@@ -174,7 +175,7 @@
 /* Quote */
 
 #info {
-    background: url('./../images/quote-box.png');
+    // background: url('./../images/quote-box.png');
     height: 158px;
     width: 100%;
     margin-top: 40px;

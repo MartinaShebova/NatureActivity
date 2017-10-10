@@ -6,23 +6,23 @@ System.config({
         'systemjs-babel-build': '/libs/systemjs-plugin-babel/systemjs-babel-browser.js',
 
         // App files
-        'main': '/static/js/main.js',
-        'requester': '/static/js/requester.js',
-        'templates': '/static/js/templates.js',
+        'main': '/build/js/transpiled/main.js',
+        'requester': '/build/js/transpiled/requester.js',
+        'templates': '/build/js/transpiled/templates.js',
 
         //Controllers
-        'homeController': '/static/js/controllers/homeController.js',
-        'galleryController': '/static/js/controllers/galleryController.js',
-        'earthquakesController': '/static/js/controllers/earthquakesController.js',
-        'weatherController': '/static/js/controllers/weatherController.js',
-        'uploadController': '/static/js/controllers/uploadController.js',
-        'singleController': '/static/js/controllers/singleController.js',
+        'homeController': '/build/js/transpiled/controllers/homeController.js',
+        'galleryController': '/build/js/transpiled/controllers/galleryController.js',
+        'earthquakesController': '/build/js/transpiled/controllers/earthquakesController.js',
+        'weatherController': '/build/js/transpiled/controllers/weatherController.js',
+        'uploadController': '/build/js/transpiled/controllers/uploadController.js',
+        'singleController': '/build/js/transpiled/controllers/singleController.js',
 
         //Validator
-        'Validator': '/static/js/validator/Validator.js',
+        'Validator': '/build/js/transpiled/validator/Validator.js',
 
         //Models
-        'UploadImgUrlModel': '/static/js/models/UploadImgUrlModel.js',
+        'UploadImgUrlModel': '/build/js/transpiled/models/UploadImgUrlModel.js',
 
         //API helpers
         

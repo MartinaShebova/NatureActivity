@@ -6,9 +6,13 @@ export function upload() {
     getTemplate('upload')
         .then((templateFunc) => {
             //Render template
+            
             let html = templateFunc();
 
             $('#dynamic-container').html(html);
+
+            $("#upload-wrapper").css("background-image", "url('/static/images/main-background.png')");
+            
         });
 
     $("body").on('click', ".upload-btn", () => {
