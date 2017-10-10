@@ -3,7 +3,7 @@ import { requester } from 'requester';
 
 export function weather() {
 
-    let apiUrl = 'http://api.apixu.com/v1/forecast.json?key=c2878ace8bde4c918d6134557170910&q=',
+    let apiUrl = 'https://api.apixu.com/v1/forecast.json?key=c2878ace8bde4c918d6134557170910&q=',
         cities = {
             Sofia: 'Sofia',
             London: 'London',
