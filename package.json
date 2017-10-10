@@ -55,9 +55,7 @@
     "path": "^0.12.7",
     "systemjs": "^0.20.19",
     "systemjs-plugin-babel": "0.0.25",
-    "toastr": "^2.1.2"
-  },
-  "devDependencies": {
+    "toastr": "^2.1.2",
     "@types/gulp-sass": "0.0.30",
     "@types/gulp-uglify": "^3.0.1",
     "@types/gulp-useref": "^3.0.30",
@@ -69,7 +67,6 @@
     "del": "^3.0.0",
     "gulp": "^3.9.1",
     "gulp-babel": "^7.0.0",
-    "gulp-concat": "^2.6.1",
     "gulp-cssnano": "^2.1.2",
     "gulp-js-minify": "0.0.3",
     "gulp-sass": "^3.1.0",
@@ -78,5 +75,7 @@
     "pump": "^1.0.2",
     "run-sequence": "^2.2.0",
     "uglify-js-es6": "^2.8.9"
+  },
+  "devDependencies": {
   }
 }
