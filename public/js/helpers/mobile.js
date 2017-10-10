@@ -38,6 +38,7 @@ $(window).on('resize', function() {
 });
 
 $(document).ready(function(){
+
     $("#toggle-button").click(function(){
         $("#toggle-menu").toggle();
         $("#dynamic-container").toggleClass('add-margin');
@@ -52,4 +53,8 @@ $(document).ready(function(){
     if(view < 768){
         $("#toggle-dropdown li a").css("border-bottom", "2px solid yellow");
     }
+
+    $("footer").css("background", "url('/static/images/footer.png')");
+    
+    
 });

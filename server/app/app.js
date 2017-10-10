@@ -20,6 +20,7 @@ const init = (data) => {
     require('./api-routes')(app, data);
 
     app.use('/static', express.static(__dirname + './../../public'));    
+    app.use('/build', express.static(__dirname + './../../build'));    
     app.use('/libs', express.static(__dirname + './../../node_modules'));    
     
     return Promise.resolve(app);

@@ -7,20 +7,21 @@ tbody, tfoot, thead, tr, th, td, footer {
   box-sizing: border-box;
 }
 
-@font-face {
-  font-family: DroidSans;
-  src: url('./../fonts/DroidSans.ttf');
-}
+// @font-face {
+//   font-family: DroidSans;
+//   src: url('./../../../public/fonts/DroidSans.ttf');
+// }
 
-@font-face {
-  font-family: DroidSans-Bold;
-  src: url('./../fonts/DroidSans-Bold.ttf');
-}
+// @font-face {
+//   font-family: DroidSans-Bold;
+//   src: url('./../../../public/fonts/DroidSans-Bold.ttf');
+// }
 
-@font-face {
-  font-family: ColaborateThin;
-  src: url('./../../fonts/ColabThi.otf');
-}
+// @font-face {
+//   font-family: ColaborateThin;
+//   src: url('./../../../public/fonts/ColabThi.otf');
+// }
+
 body {
   height: 100%;
   background-repeat: no-repeat;

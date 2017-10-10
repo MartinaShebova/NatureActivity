@@ -1,0 +1,44 @@
+html, body, div, span, iframe, h1, h2, h3, h4, h5, h6, p,
+a, address, img, small, strong, sub, sup, u, i, ol, ul, li,
+fieldset, form, label, legend, table, caption, section, nav,
+tbody, tfoot, thead, tr, th, td, footer {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  height: 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 14px;
+  line-height: 1.42857143;
+  /* IE10+ */
+  background-image: -ms-linear-gradient(left, #11161C 0%, #293139 50%, #11161C 100%);
+  /* Mozilla Firefox */
+  background-image: -moz-linear-gradient(left, #11161C 0%, #293139 50%, #11161C 100%);
+  /* Opera */
+  background-image: -o-linear-gradient(left, #11161C 0%, #293139 50%, #11161C 100%);
+  /* Webkit (Safari/Chrome 10) */
+  background-image: -webkit-gradient(linear, left top, right top, color-stop(0, #11161C), color-stop(50, #293139), color-stop(100, #11161C));
+  /* Webkit (Chrome 11+) */
+  background-image: -webkit-linear-gradient(left, #11161C 0%, #293139 50%, #11161C 100%);
+  /* W3C Markup */
+  background-image: linear-gradient(to right, #11161C 0%, #293139 50%, #11161C 100%); }
+
+/* Gallery page start */
+/* Common title to the most views */
+.title-wrapper {
+  margin: 0 auto;
+  width: 960px; }
+  .title-wrapper h1 {
+    font-family: 'Open Sans Condensed', Helvetica, Arial, Lucida, sans-serif;
+    padding-top: 63px;
+    padding-bottom: 0;
+    color: #ffffff;
+    font-size: 30px; }
+
+.add-margin {
+  margin-top: 150px; }
+
+/* Common title to the most views END */
